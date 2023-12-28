@@ -1,0 +1,779 @@
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"982856186",accountID:"3226302",trustKey:"3226302",xpid:"VwQFV1VTChAJXFNSAAUCVlc=",licenseKey:"NRJS-fa9b211374ada0557cd",applicationID:"982074503"};;/*! For license information please see nr-loader-spa-1.249.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>m,Mt:()=>b,C5:()=>s,DL:()=>A,OP:()=>N,lF:()=>j,Yu:()=>E,Dg:()=>v,CX:()=>c,GE:()=>x,sU:()=>R});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o);const r=(0,n.ek)(e);r&&(r.info=a[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",h=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:50,error_sampling_rate:50,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},g="All configuration objects require an agent identifier!";function m(e){if(!e)throw new Error(g);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function v(e,t){if(!e)throw new Error(g);p[e]=(0,i.D)(t,h());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(g);var r=m(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},w={};function A(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!w[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return w[e]}function x(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");w[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=w[e])}const E=(0,n.mF)().o;var _=r(385),T=r(6818);const S={buildEnv:T.Re,customTransaction:void 0,disabled:!1,distMethod:T.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(_._A?.performance?.timeOrigin||_._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+_._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof _._A.XMLHttpRequest?.prototype?.addEventListener,version:T.q4,denyList:void 0},D={};function N(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!D[e])throw new Error("Runtime for ".concat(e," was never set"));return D[e]}function R(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");D[e]=(0,i.D)(t,S);const r=(0,n.ek)(e);r&&(r.runtime=D[e])}function j(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,lF:()=>a,q4:()=>n});const n="1.249.0",i="PROD",o="CDN",a="2.0.0-alpha.11"},385:(e,t,r)=>{"use strict";r.d(t,{FN:()=>c,IF:()=>l,LW:()=>a,Nk:()=>h,Tt:()=>u,_A:()=>o,cv:()=>p,iS:()=>s,il:()=>n,ux:()=>d,v6:()=>i,w1:()=>f});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a="complete"===o?.document?.readyState,s=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=(()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),f=Boolean(n&&window.document.documentMode),h=!!o.navigator?.sendBeacon,p=Math.floor(o?.performance?.timeOrigin||o?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{L:()=>d,R:()=>c});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const r=[...s[e]];function a(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}r.every((e=>{let[t,r]=e;return r.staged}))&&(r.sort(((e,t)=>e[1].priority-t[1].priority)),r.forEach((t=>{let[r]=t;s[e].delete(r),a(r)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},f=!1;try{f=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var h={on:g,addEventListener:g,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=p(n),c=m(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var f=b()[s[e]];f&&f.push([h,e,r,a]);return a},get:v,listeners:m,context:p,buffer:function(e,t){const r=b();if(t=t||"feature",h.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:r,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return h;function p(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function g(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function v(t){return d[t]=d[t]||e(h,t)}function b(){return h.backlog}}(void 0,"globalEE"),d=(0,n.fP)();function l(){u.aborted=!0,u.backlog={}}d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Ht:()=>u,M:()=>c,Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,++i).toString(16));return a.join("")}function c(){return s(16)}function u(){return s(32)}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>o,oD:()=>i});const n="NRBA",i=144e5,o=18e5},7894:(e,t,r)=>{"use strict";function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},7243:(e,t,r)=>{"use strict";r.d(t,{e:()=>i});var n=r(385);function i(e){if(0===(e||"").indexOf("data:"))return{protocol:"data"};try{const t=new URL(e,location.href),r={port:t.port,hostname:t.hostname,pathname:t.pathname,search:t.search,protocol:t.protocol.slice(0,t.protocol.indexOf(":")),sameOrigin:t.protocol===n._A?.location?.protocol&&t.host===n._A?.location?.host};return r.port&&""!==r.port||("http:"===t.protocol&&(r.port="80"),"https:"===t.protocol&&(r.port="443")),r.pathname&&""!==r.pathname?r.pathname.startsWith("/")||(r.pathname="/".concat(r.pathname)):r.pathname="/",r}catch(e){return{}}}},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>d,T:()=>l});var n=r(8325),i=r(5546),o=r(3325),a=r(385);const s="newrelic";const c={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa],sr:[o.D.sessionReplay,o.D.sessionTrace]},u=new Set;function d(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(u.has(t)||(Object.entries(e).forEach((e=>{let[t,n]=e;c[t]?c[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),l[t]=Boolean(n)})),Object.keys(c).forEach((e=>{void 0===l[e]&&(c[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),l[e]=!1)})),u.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{a._A.dispatchEvent(new CustomEvent(s,{detail:e}))}catch(e){}}({loaded:!0})))}const l={}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>o,ek:()=>u,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(7894),i=r(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,n.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},1214:(e,t,r)=>{"use strict";r.d(t,{em:()=>b,u5:()=>D,QU:()=>j,_L:()=>I,Gm:()=>H,Lg:()=>L,BV:()=>G,Kf:()=>Y});var n=r(8325),i=r(3117);const o="nr@original:".concat(i.a);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];d(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return d(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,d,l;try{a=this,o=[...arguments],d="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],d],e)}i(r+"start",[o,a,s],d,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],d,c),e}finally{i(r+"end",[o,a,l],d,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}var l=r(2210),f=r(385);const h={},p=f._A.XMLHttpRequest,g="addEventListener",m="removeEventListener",v="nr@wrapped:".concat(n.A);function b(e){var t=function(e){return(e||n.ee).get("events")}(e);if(h[t.debugId]++)return t;h[t.debugId]=1;var r=c(t,!0);function i(e){r.inPlace(e,[g,m],"-",o)}function o(e,t){return e[1]}return"getPrototypeOf"in Object&&(f.il&&y(document,i),y(f._A,i),y(p.prototype,i)),t.on(g+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,l.X)(n,v,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(m+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function y(e,t){let r=e;for(;"object"==typeof r&&!Object.prototype.hasOwnProperty.call(r,g);)r=Object.getPrototypeOf(r);for(var n=arguments.length,i=new Array(n>2?n-2:0),o=2;o<n;o++)i[o-2]=arguments[o];r&&t(r,...i)}var w="fetch-",A=w+"body-",x=["arrayBuffer","blob","json","text","formData"],E=f._A.Request,_=f._A.Response,T="prototype";const S={};function D(e){const t=function(e){return(e||n.ee).get("fetch")}(e);if(!(E&&_&&f._A.fetch))return t;if(S[t.debugId]++)return t;function r(e,r,i){var o=e[r];"function"==typeof o&&(e[r]=function(){var e,r=[...arguments],a={};t.emit(i+"before-start",[r],a),a[n.A]&&a[n.A].dt&&(e=a[n.A].dt);var s=o.apply(this,r);return t.emit(i+"start",[r,e],s),s.then((function(e){return t.emit(i+"end",[null,e],s),e}),(function(e){throw t.emit(i+"end",[e],s),e}))})}return S[t.debugId]=1,x.forEach((e=>{r(E[T],e,A),r(_[T],e,A)})),r(f._A,"fetch",w),t.on(w+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(w+"done",[null,r],n)}else t.emit(w+"done",[e],n)})),t}const N={},R=["pushState","replaceState"];function j(e){const t=function(e){return(e||n.ee).get("history")}(e);return!f.il||N[t.debugId]++||(N[t.debugId]=1,c(t).inPlace(window.history,R,"-")),t}var C=r(3239);const O={},P=["appendChild","insertBefore","replaceChild"];function I(e){const t=function(e){return(e||n.ee).get("jsonp")}(e);if(!f.il||O[t.debugId])return t;O[t.debugId]=!0;var r=c(t),i=/[?&](?:callback|cb)=([^&#]+)/,o=/(.*)\.([^.]+)/,a=/^(\w+)(\.|$)(.*)$/;function s(e,t){if(!e)return t;const r=e.match(a),n=r[1];return s(r[3],t[n])}return r.inPlace(Node.prototype,P,"dom-"),t.on("dom-start",(function(e){!function(e){if(!e||"string"!=typeof e.nodeName||"script"!==e.nodeName.toLowerCase())return;if("function"!=typeof e.addEventListener)return;var n=(a=e.src,c=a.match(i),c?c[1]:null);var a,c;if(!n)return;var u=function(e){var t=e.match(o);if(t&&t.length>=3)return{key:t[2],parent:s(t[1],window)};return{key:e,parent:window}}(n);if("function"!=typeof u.parent[u.key])return;var d={};function l(){t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,C.m$)(!1)),e.removeEventListener("error",f,(0,C.m$)(!1))}function f(){t.emit("jsonp-error",[],d),t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,C.m$)(!1)),e.removeEventListener("error",f,(0,C.m$)(!1))}r.inPlace(u.parent,[u.key],"cb-",d),e.addEventListener("load",l,(0,C.m$)(!1)),e.addEventListener("error",f,(0,C.m$)(!1)),t.emit("new-jsonp",[e.src],d)}(e[0])})),t}const k={};function H(e){const t=function(e){return(e||n.ee).get("mutation")}(e);if(!f.il||k[t.debugId])return t;k[t.debugId]=!0;var r=c(t),i=f._A.MutationObserver;return i&&(window.MutationObserver=function(e){return this instanceof i?new i(r(e,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype),t}const M={};function L(e){const t=function(e){return(e||n.ee).get("promise")}(e);if(M[t.debugId])return t;M[t.debugId]=!0;var r=t.context,i=c(t),a=f._A.Promise;return a&&function(){function e(r){var n=t.context(),o=i(r,"executor-",n,null,!1);const s=Reflect.construct(a,[o],e);return t.context(s).getCtx=function(){return n},s}f._A.Promise=e,Object.defineProperty(e,"name",{value:"Promise"}),e.toString=function(){return a.toString()},Object.setPrototypeOf(e,a),["all","race"].forEach((function(r){const n=a[r];e[r]=function(e){let i=!1;[...e||[]].forEach((e=>{this.resolve(e).then(a("all"===r),a(!1))}));const o=n.apply(this,arguments);return o;function a(e){return function(){t.emit("propagate",[null,!i],o,!1,!1),i=i||!e}}}})),["resolve","reject"].forEach((function(r){const n=a[r];e[r]=function(e){const r=n.apply(this,arguments);return e!==r&&t.emit("propagate",[e,!0],r,!1,!1),r}})),e.prototype=a.prototype;const n=a.prototype.then;a.prototype.then=function(){var e=this,o=r(e);o.promise=e;for(var a=arguments.length,s=new Array(a),c=0;c<a;c++)s[c]=arguments[c];s[0]=i(s[0],"cb-",o,null,!1),s[1]=i(s[1],"cb-",o,null,!1);const u=n.apply(this,s);return o.nextPromise=u,t.emit("propagate",[e,!0],u,!1,!1),u},a.prototype.then[o]=n,t.on("executor-start",(function(e){e[0]=i(e[0],"resolve-",this,null,!1),e[1]=i(e[1],"resolve-",this,null,!1)})),t.on("executor-err",(function(e,t,r){e[1](r)})),t.on("cb-end",(function(e,r,n){t.emit("propagate",[n,!0],this.nextPromise,!1,!1)})),t.on("propagate",(function(e,r,n){this.getCtx&&!r||(this.getCtx=function(){if(e instanceof Promise)var r=t.context(e);return r&&r.getCtx?r.getCtx():this})}))}(),t}const z={},B="setTimeout",F="setInterval",U="clearTimeout",Z="-start",V="-",q=[B,"setImmediate",F,U,"clearImmediate"];function G(e){const t=function(e){return(e||n.ee).get("timer")}(e);if(z[t.debugId]++)return t;z[t.debugId]=1;var r=c(t);return r.inPlace(f._A,q.slice(0,2),B+V),r.inPlace(f._A,q.slice(2,3),F+V),r.inPlace(f._A,q.slice(3),U+V),t.on(F+Z,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(B+Z,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}var W=r(50);const X={},K=["open","send"];function Y(e){var t=e||n.ee;const r=function(e){return(e||n.ee).get("xhr")}(t);if(X[r.debugId]++)return r;X[r.debugId]=1,b(t);var i=c(r),o=f._A.XMLHttpRequest,a=f._A.MutationObserver,s=f._A.Promise,u=f._A.setInterval,d="readystatechange",l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],h=[],p=f._A.XMLHttpRequest=function(e){const t=new o(e),n=r.context(t);try{r.emit("new-xhr",[t],n),t.addEventListener(d,(a=n,function(){var e=this;e.readyState>3&&!a.resolved&&(a.resolved=!0,r.emit("xhr-resolved",[],e)),i.inPlace(e,l,"fn-",A)}),(0,C.m$)(!1))}catch(e){(0,W.Z)("An error occurred while intercepting XHR",e);try{r.emit("internal-error",[e])}catch(e){}}var a;return t};function g(e,t){i.inPlace(t,["onreadystatechange"],"fn-",A)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,p),p.prototype=o.prototype,i.inPlace(p.prototype,K,"-xhr-",A),r.on("send-xhr-start",(function(e,t){g(e,t),function(e){h.push(e),a&&(m?m.then(w):u?u(w):(v=-v,y.data=v))}(t)})),r.on("open-xhr-start",g),a){var m=s&&s.resolve();if(!u&&!s){var v=1,y=document.createTextNode(v);new a(w).observe(y,{characterData:!0})}}else t.on("fn-end",(function(e){e[0]&&e[0].type===d||w()}));function w(){for(var e=0;e<h.length;e++)g(0,h[e]);h.length&&(h=[])}function A(e,t){return t}return r}},7825:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.ajax},6660:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.jserrors},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},4649:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageAction},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},7144:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.sessionReplay},3614:(e,t,r)=>{"use strict";r.d(t,{BST_RESOURCE:()=>i,END:()=>s,FEATURE_NAME:()=>n,FN_END:()=>u,FN_START:()=>c,PUSH_STATE:()=>d,RESOURCE:()=>o,START:()=>a});const n=r(3325).D.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,u="fn"+s,d="pushState"},7836:(e,t,r)=>{"use strict";r.d(t,{BODY:()=>x,CB_END:()=>E,CB_START:()=>u,END:()=>A,FEATURE_NAME:()=>i,FETCH:()=>T,FETCH_BODY:()=>v,FETCH_DONE:()=>m,FETCH_START:()=>g,FN_END:()=>c,FN_START:()=>s,INTERACTION:()=>f,INTERACTION_API:()=>d,INTERACTION_EVENTS:()=>o,JSONP_END:()=>b,JSONP_NODE:()=>p,JS_TIME:()=>_,MAX_TIMER_BUDGET:()=>a,REMAINING:()=>l,SPA_NODE:()=>h,START:()=>w,originalSetTimeout:()=>y});var n=r(234);const i=r(3325).D.spa,o=["click","submit","keypress","keydown","keyup","change"],a=999,s="fn-start",c="fn-end",u="cb-start",d="api-ixn-",l="remaining",f="interaction",h="spaNode",p="jsonpNode",g="fetch-start",m="fetch-done",v="fetch-body-",b="jsonp-end",y=n.Yu.ST,w="-start",A="-end",x="-body",E="cb"+A,_="jsTime",T="fetch"},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},7530:(e,t,r)=>{"use strict";r.d(t,{j:()=>b});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(7894),c=r(8e3),u=r(3960),d=r(385),l=r(50),f=r(3081),h=r(8632);function p(){const e=(0,h.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}var g=r(2825);const m=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let v=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:w,info:A,loader_config:x,runtime:E={loaderType:b},exposed:_=!0}=t;const T=(0,h.gG)();A||(w=T.init,A=T.info,x=T.loader_config),(0,i.Dg)(e.agentIdentifier,w||{}),(0,i.GE)(e.agentIdentifier,x||{}),A.jsAttributes??={},d.v6&&(A.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,A);const S=(0,i.P_)(e.agentIdentifier),D=[A.beacon,A.errorBeacon];v||(S.proxy.assets&&(m(S.proxy.assets),D.push(S.proxy.assets)),S.proxy.beacon&&D.push(S.proxy.beacon),p(),(0,h.EZ)("activatedFeatures",g.T)),E.denyList=[...S.ajax.deny_list||[],...S.ajax.block_internal?D:[]],(0,i.sU)(e.agentIdentifier,E),void 0===e.api&&(e.api=function(e,t){t||(0,c.R)(e,"api");const h={};var p=a.ee.get(e),g=p.get("tracer"),m="api-",v=m+"ixn-";function b(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),A(m,n,!0,o||null===r?"session":void 0)(t,r)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{h[e]=A(m,e,!0,"api")})),h.addPageAction=A(m,"addPageAction",!0,n.D.pageAction),h.setCurrentRouteName=A(m,"routeName",!0,n.D.spa),h.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,A(m,"setPageViewName",!0)()},h.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},h.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(f.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,p);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},h.recordReplay=function(){(0,o.p)(f.xS,["API/recordReplay/called"],void 0,n.D.metrics,p),(0,o.p)("recordReplay",[],void 0,n.D.sessionReplay,p)},h.pauseReplay=function(){(0,o.p)(f.xS,["API/pauseReplay/called"],void 0,n.D.metrics,p),(0,o.p)("pauseReplay",[],void 0,n.D.sessionReplay,p)},h.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(f.xS,["API/createTracer/called"],void 0,n.D.metrics,p),(0,o.p)(v+"tracer",[(0,s.z)(),e,r],i,n.D.spa,p),function(){if(g.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw g.emit("fn-err",[arguments,this,e],r),e}finally{g.emit("fn-end",[(0,s.z)()],r)}}}};function A(e,t,r,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,p),r?void 0:this}}function x(){r.e(111).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(v,e,void 0,n.D.spa)})),h.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,p)},d.il?(0,u.b2)((()=>x()),!0):x(),h}(e.agentIdentifier,y)),void 0===e.exposed&&(e.exposed=_),v=!0}},1926:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>({111:"nr-spa",164:"nr-spa-compressor",433:"nr-spa-recorder"}[e]+"-1.249.0.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.249.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={111:"sha512-rcwC3TQKAe2v/8lLef/QtCPf7aXHaINQK4rrQfRSqEniSzjfHKp2puNRiDg83LlvldPaSMD6aDSwKPMP36tEEg==",433:"sha512-JeWgZm97pm4zAk+MvNNodtuNUNFe082xN5Zj2RU/N/yCAq3qZMnaiENIF3swHo/Ae+Ju06jx3VeGAH/rqoAEoA==",164:"sha512-yrd1XMobAelLE0xAoM/hP3axL+jcB+V8KhqdTQItU7063qODLZOtgHB/y5KPY0H0Cev/2f7LVwp1KY0//grUmg=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var h=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(h.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=h.bind(null,s.onerror),s.onload=h.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={801:0,92:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.249.0.PROD"]=self["webpackChunk:NRBA-1.249.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(1926);var e=i(50);class t{#e(e){return"Call to agent api ".concat(e," failed. The agent is not currently initialized.")}addPageAction(t,r){(0,e.Z)(this.#e("addPageAction"))}setPageViewName(t,r){(0,e.Z)(this.#e("setPageViewName"))}setCustomAttribute(t,r,n){(0,e.Z)(this.#e("setCustomAttribute"))}noticeError(t,r){(0,e.Z)(this.#e("noticeError"))}setUserId(t){(0,e.Z)(this.#e("setUserId"))}setApplicationVersion(t){(0,e.Z)(this.#e("setApplicationVersion"))}setErrorHandler(t){(0,e.Z)(this.#e("setErrorHandler"))}finished(t){(0,e.Z)(this.#e("finished"))}addRelease(t,r){(0,e.Z)(this.#e("addRelease"))}start(t){(0,e.Z)(this.#e("start"))}recordReplay(){(0,e.Z)(this.#e("recordReplay"))}pauseReplay(){(0,e.Z)(this.#e("pauseReplay"))}}var r=i(3325),n=i(234);const o=Object.values(r.D);function a(e){const t={};return o.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var s=i(7530);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,r){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,n.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const r=l.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let n;try{if(r){const{setupAgentSession:e}=await i.e(111).then(i.bind(i,3228));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,c.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(111).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName),o(!1)}};l.il?(0,d.b2)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplayMode))}}var h=i(7633);class p extends f{static featureName=h.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,h.t,r),this.importAggregator()}}var g=i(1117),m=i(1284);class v extends g.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,m.D)(e,(function(e,r){t[e]=b(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,m.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=b(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=b(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=w(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function w(e){return"object"!=typeof e?[]:(0,m.D)(e,A)}function A(e,t){return t}var x=i(8632),E=i(4402),_=i(4351);var T=i(5546),S=i(7956),D=i(3239),N=i(7894),R=i(9251);class j extends f{static featureName=R.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,R.t,r),l.il&&((0,S.N)((()=>(0,T.p)("docHidden",[(0,N.z)()],void 0,R.t,this.ee)),!0),(0,D.bP)("pagehide",(()=>(0,T.p)("winPagehide",[(0,N.z)()],void 0,R.t,this.ee))),this.importAggregator())}}var C=i(3081);class O extends f{static featureName=C.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,C.t9,r),this.importAggregator()}}var P=i(6660);class I{constructor(e,t,r,n){this.name="UncaughtError",this.message=e,this.sourceURL=t,this.line=r,this.column=n}}class k extends f{static featureName=P.t;#t=new Set;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,P.t,n);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("fn-err",((e,t,n)=>{this.abortHandler&&!this.#t.has(n)&&(this.#t.add(n),(0,T.p)("err",[this.#r(n),(0,N.z)()],void 0,r.D.jserrors,this.ee))})),this.ee.on("internal-error",(e=>{this.abortHandler&&(0,T.p)("ierr",[this.#r(e),(0,N.z)(),!0],void 0,r.D.jserrors,this.ee)})),l._A.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,T.p)("err",[this.#n(e),(0,N.z)(),!1,{unhandledPromiseRejection:1}],void 0,r.D.jserrors,this.ee)}),(0,D.m$)(!1,this.removeOnAbort?.signal)),l._A.addEventListener("error",(e=>{this.abortHandler&&(this.#t.has(e.error)?this.#t.delete(e.error):(0,T.p)("err",[this.#i(e),(0,N.z)()],void 0,r.D.jserrors,this.ee))}),(0,D.m$)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#o,this.importAggregator()}#o(){this.removeOnAbort?.abort(),this.#t.clear(),this.abortHandler=void 0}#r(e){return e instanceof Error?e:void 0!==e?.message?new I(e.message,e.filename||e.sourceURL,e.lineno||e.line,e.colno||e.col):new I("string"==typeof e?e:(0,_.P)(e))}#n(e){let t="Unhandled Promise Rejection: ";if(e?.reason instanceof Error)try{return e.reason.message=t+e.reason.message,e.reason}catch(t){return e.reason}if(void 0===e.reason)return new I(t);const r=this.#r(e.reason);return r.message=t+r.message,r}#i(e){return e.error instanceof Error?e.error:new I(e.message,e.filename,e.lineno,e.colno)}}var H=i(2210);let M=1;const L="nr@id";function z(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===l._A?0:(0,H.X)(e,L,(function(){return M++}))}function B(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,_.P)(e).length}catch(e){return}}}var F=i(1214),U=i(7243);class Z{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,n.DL)(this.agentIdentifier);if(!t)return null;var r=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!r||!i)return null;var a=(0,E.M)(),s=(0,E.Ht)(),c=Date.now(),u={spanId:a,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(u.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),u.traceContextStateHeader=this.generateTraceContextStateHeader(a,c,r,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(u.newrelicHeader=this.generateTraceHeader(a,s,c,r,i,o)),u}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof l._A?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,_.P)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,n.Mt)(this.agentIdentifier,"distributed_tracing")&&(r=(0,n.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var i=0;i<r.allowed_origins.length;i++){var o=(0,U.e)(r.allowed_origins[i]);if(e.hostname===o.hostname&&e.protocol===o.protocol&&e.port===o.port){t=!0;break}}return t}isDtEnabled(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var V=i(7825),q=["load","error","abort","timeout"],G=q.length,W=n.Yu.REQ,X=n.Yu.XHR;class K extends f{static featureName=V.t;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,V.t,i),(0,n.OP)(e).xhrWrappable){this.dt=new Z(e),this.handler=(e,t,r,n)=>(0,T.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};l._A?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const n={status:t.responseStatus},i={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};Y(n,t.name),this.handler("xhr",[n,i,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,r.D.ajax)}}))}catch(e){}(0,F.u5)(this.ee),(0,F.Kf)(this.ee),function(e,t,i,o){function a(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=x,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){E(t,e)}),(0,D.m$)(!1)),l.IF||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,D.m$)(!1))}function s(e){this.params={method:e[0]},Y(this,e[1]),this.metrics={}}function c(t,r){var i=(0,n.DL)(e);i.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",i.xpid);var a=o.generateTracePayload(this.parsedOrigin);if(a){var s=!1;a.newrelicHeader&&(r.setRequestHeader("newrelic",a.newrelicHeader),s=!0),a.traceContextParentHeader&&(r.setRequestHeader("traceparent",a.traceContextParentHeader),a.traceContextStateHeader&&r.setRequestHeader("tracestate",a.traceContextStateHeader),s=!0),s&&(this.dt=a)}}function u(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=B(i);a&&(n.txSize=a)}this.startTime=(0,N.z)(),this.body=i,this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<G;s++)r.addEventListener(q[s],this.listener,(0,D.m$)(!1))}function d(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function f(e,t){var r=""+z(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function h(e,t){var r=""+z(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function p(){this.endTime=(0,N.z)()}function g(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function m(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function v(e,t,r){t instanceof X&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,N.z)()))}function b(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,N.z)()-this.xhrCbStart,this.onload,r],r)}function y(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&l.il&&(t=""+l._A.location.href):e[0]&&e[0].url?t=e[0].url:l._A?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,U.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var n=o.generateTracePayload(this.parsedOrigin);if(n&&(n.newrelicHeader||n.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,n)&&(this.dt=n);else{var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),s(i.headers,n)&&(this.dt=n),e.length>1?e[1]=i:e.push(i)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function w(e,t){this.params={},this.metrics={},this.startTime=(0,N.z)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof W?r=i.url:l._A?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),Y(this,r);var o=(""+(i&&i instanceof W&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.body=n.body,this.txSize=B(n.body)||0}function A(e,t){var n;this.endTime=(0,N.z)(),this.params||(this.params={}),this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var o={txSize:this.txSize,rxSize:n,duration:(0,N.z)()-this.startTime};i("xhr",[this.params,o,this.startTime,this.endTime,"fetch"],this,r.D.ajax)}function x(e){var t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;o<G;o++)e.removeEventListener(q[o],this.listener,!1);t.aborted||(n.duration=(0,N.z)()-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):E(this,e),n.cbTime=this.cbTime,i("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,r.D.ajax))}}function E(e,t){e.params.status=t.status;var r=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?B(e.response):"text"===r||""===r||void 0===r?B(e.responseText):void 0}(t,e.lastSize);if(r&&(e.metrics.rxSize=r),e.sameOrigin){var n=t.getResponseHeader("X-NewRelic-App-Data");n&&(e.params.cat=n.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",a),t.on("open-xhr-start",s),t.on("open-xhr-end",c),t.on("send-xhr-start",u),t.on("xhr-cb-time",d),t.on("xhr-load-added",f),t.on("xhr-load-removed",h),t.on("xhr-resolved",p),t.on("addEventListener-end",g),t.on("removeEventListener-end",m),t.on("fn-end",b),t.on("fetch-before-start",y),t.on("fetch-start",w),t.on("fn-start",v),t.on("fetch-done",A)}(e,this.ee,this.handler,this.dt),this.importAggregator()}}}function Y(e,t){var r=(0,U.e)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}var J=i(3614);const{BST_RESOURCE:Q,RESOURCE:ee,START:te,END:re,FEATURE_NAME:ne,FN_END:ie,FN_START:oe,PUSH_STATE:ae}=J;var se=i(7144);class ce extends f{static featureName=se.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,se.t,r),this.importAggregator()}}var ue=i(7836);const{FEATURE_NAME:de,START:le,END:fe,BODY:he,CB_END:pe,JS_TIME:ge,FETCH:me,FN_START:ve,CB_START:be,FN_END:ye}=ue;var we=i(4649);class Ae extends f{static featureName=we.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,we.t,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,E.ky)(16);super(),l._A?(this.agentIdentifier=r,this.sharedAggregator=new v({agentIdentifier:this.agentIdentifier}),this.features={},(0,x.h5)(r,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),(0,s.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}run(){try{const t=a(this.agentIdentifier),n=[...this.desiredFeatures];n.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),n.forEach((n=>{if(t[n.featureName]||n.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(n.featureName);i.every((e=>t[e]))||(0,e.Z)("".concat(n.featureName," is enabled but one or more dependent features has been disabled (").concat((0,_.P)(i),"). This may cause unintended consequences or missing data...")),this.features[n.featureName]=new n(this.agentIdentifier,this.sharedAggregator)}}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,x.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The session trace feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[K,p,j,class extends f{static featureName=ne;constructor(e,t){if(super(e,t,ne,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;const n=this.ee;let i;(0,F.QU)(n),this.eventsEE=(0,F.em)(n),this.eventsEE.on(oe,(function(e,t){this.bstStart=(0,N.z)()})),this.eventsEE.on(ie,(function(e,t){(0,T.p)("bst",[e[0],t,this.bstStart,(0,N.z)()],void 0,r.D.sessionTrace,n)})),n.on(ae+te,(function(e){this.time=(0,N.z)(),this.startPath=location.pathname+location.hash})),n.on(ae+re,(function(e){(0,T.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,r.D.sessionTrace,n)}));try{i=new PerformanceObserver((e=>{const t=e.getEntries();(0,T.p)(Q,[t],void 0,r.D.sessionTrace,n)})),i.observe({type:ee,buffered:!0})}catch(e){}this.importAggregator({resourceObserver:i})}},ce,O,Ae,k,class extends f{static featureName=de;constructor(e,t){if(super(e,t,de,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;if(!(0,n.OP)(e).xhrWrappable)return;try{this.removeOnAbort=new AbortController}catch(e){}let r,i=0;const o=this.ee.get("tracer"),a=(0,F._L)(this.ee),s=(0,F.Lg)(this.ee),c=(0,F.BV)(this.ee),u=(0,F.Kf)(this.ee),d=this.ee.get("events"),f=(0,F.u5)(this.ee),h=(0,F.QU)(this.ee),p=(0,F.Gm)(this.ee);function g(e,t){h.emit("newURL",[""+window.location,t])}function m(){i++,r=window.location.hash,this[ve]=(0,N.z)()}function v(){i--,window.location.hash!==r&&g(0,!0);var e=(0,N.z)();this[ge]=~~this[ge]+e-this[ve],this[ye]=e}function b(e,t){e.on(t,(function(){this[t]=(0,N.z)()}))}this.ee.on(ve,m),s.on(be,m),a.on(be,m),this.ee.on(ye,v),s.on(pe,v),a.on(pe,v),this.ee.buffer([ve,ye,"xhr-resolved"],this.featureName),d.buffer([ve],this.featureName),c.buffer(["setTimeout"+fe,"clearTimeout"+le,ve],this.featureName),u.buffer([ve,"new-xhr","send-xhr"+le],this.featureName),f.buffer([me+le,me+"-done",me+he+le,me+he+fe],this.featureName),h.buffer(["newURL"],this.featureName),p.buffer([ve],this.featureName),s.buffer(["propagate",be,pe,"executor-err","resolve"+le],this.featureName),o.buffer([ve,"no-"+ve],this.featureName),a.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"],this.featureName),b(f,me+le),b(f,me+"-done"),b(a,"new-jsonp"),b(a,"jsonp-end"),b(a,"cb-start"),h.on("pushState-end",g),h.on("replaceState-end",g),window.addEventListener("hashchange",g,(0,D.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("load",g,(0,D.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("popstate",(function(){g(0,i>1)}),(0,D.m$)(!0,this.removeOnAbort?.signal)),this.abortHandler=this.#o,this.importAggregator()}#o(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}],loaderType:"spa"})})()})();</script>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="https://curcumini.carrinho.app/upload/favicons/curcumini.ico">
+
+    <title>Checkout - Curcumini</title>
+
+    <link rel="stylesheet" href="https://curcumini.carrinho.app/checkout-public/one-checkout/common/css/bootstrap.min.css?v=7.0.191">
+    <link rel="stylesheet" href="https://curcumini.carrinho.app/checkout-public/one-checkout/common/css/fontello.css?v=7.0.191">
+    <link rel="stylesheet" href="https://curcumini.carrinho.app/checkout-public/one-checkout/common/css/animation.css?v=7.0.191">
+    <meta name="csrf-token" content="DxMLl8mFIeoyLzc8NvF9CWnaSTaJ2oZrZghOyMKa" />
+
+    
+        <link rel="stylesheet" href="https://curcumini.carrinho.app/checkout-public/one-checkout/monetizze/css/styles.min.css?v=7.0.191">
+    <link rel="stylesheet" href="https://curcumini.carrinho.app/checkout-public/one-checkout/common/css/boleto.min.css?v=7.0.191">
+</head>
+<body class="bg-light">
+
+            <div class="bg-danger mb-4 py-2" style="">
+    <div class="container-fluid ">
+        <div class="row align-items-center align-items-center">
+            <div class="col-12 col-md-5 text-center text-md-left mb-2 mb-md-0">
+                                    <span class="text-white text-uppercase font-weight-bold">O desconto acaba logo</span>
+                            </div>
+            <div class="col-12 col-md-7">
+                <div class="row align-items-center">
+                    <div class="col-12 col-sm-6 mb-2 mb-sm-0">
+                        <div id="counter"
+                             data-minutes="15"
+                             data-seconds="0"></div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <a href="#form-customer" class="btn btn-success btn-lg btn-block scrollToHref">Comprar Agora!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card rounded-0">
+                                <img src="https://dhl6xem5lrcqr.cloudfront.net/selfservice/site/bundle/logo_top/2946/62339d2d44703.png" class="img-fluid d-block mx-auto">
+                            </div>
+        </div>
+    </div>
+    
+        
+</div>    <div class="container-fluid">
+        <div class="row mb-4">
+                        <div class="col-12">
+                <div id="order-approved" class="alert-order-approved" style="display: none;" role="alert">
+    Olá
+</div>
+            </div>
+
+                        <div class="col-12 col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header text-center">
+    <h4>
+                    1 - Para Onde Enviamos Seu Pedido?
+            </h4>
+</div>
+<div class="card-body">
+    <form method="POST" action="https://curcumini.carrinho.app/customer/customer" accept-charset="UTF-8" id="form-customer"><input name="_method" type="hidden" value="PUT"><input name="_token" type="hidden" value="DxMLl8mFIeoyLzc8NvF9CWnaSTaJ2oZrZghOyMKa">
+
+    <input name="site_id" type="hidden" value="12041">
+
+<input name="has_physical_products" type="hidden" value="1">
+
+<input name="selected_bundle" type="hidden" value="1325195">
+
+    <div class="form-group row">
+        <div class="col-12">
+            <div class='form-group'><label for="full_name" class="control-label">Nome Completo </label> <input class="customer-lead form-control" placeholder="Digite seu nome" name="full_name" type="text" id="full_name"></div>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-12 col-sm-6">
+            <div class='form-group'><label for="telephone" class="control-label">Celular com DDD </label> <input class="customer-lead form-control" name="telephone" type="tel" id="telephone"></div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class='form-group'><label for="email" class="control-label">E-mail  <small class="text-muted">(Opcional, apenas se tiver)</small></label> <input placeholder="seu@email.com.br" label-description=" &lt;small class=&quot;text-muted&quot;&gt;(Opcional, apenas se tiver)&lt;/small&gt;" class=" form-control" name="email" type="email" id="email"></div>
+        </div>
+    </div>
+
+
+<div class="form-group row">
+        <div class="col-8 col-sm-6">
+            <div class='form-group'><label for="postcode" class="control-label">CEP </label> <input class="customer-lead-address form-control" placeholder="00000-000" name="postcode" type="tel" id="postcode"></div>
+        </div>
+    </div>
+    <div class="">
+        <div class="form-group row">
+            <div class="col-8">
+                <div class='form-group'><label for="address_street" class="control-label">Endereço </label> <input class="customer-lead-address form-control" placeholder="Rua, Avenida, Travessa..." name="address_street" type="text" id="address_street"></div>
+            </div>
+            <div class="col-4">
+                <div class='form-group'><label for="address_street_number" class="control-label">Número </label> <input class="customer-lead-address form-control" name="address_street_number" type="tel" id="address_street_number"></div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-6">
+                <div class='form-group'><label for="address_street_complement" class="control-label">Complemento </label> <input class="customer-lead-address form-control" placeholder="Bloco, Apto..." maxlength="30" name="address_street_complement" type="text" id="address_street_complement"></div>
+            </div>
+            <div class="col-6">
+                <div class='form-group'><label for="address_street_district" class="control-label">Bairro </label> <input class="customer-lead-address form-control" placeholder="Bairro" name="address_street_district" type="text" id="address_street_district"></div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-7 col-sm-8">
+                <div class='form-group'><label for="address_city" class="control-label">Cidade </label> <input class="customer-lead-address form-control" placeholder="Cidade" name="address_city" type="text" id="address_city"></div>
+            </div>
+            <div class="col-5 col-sm-4">
+                <label for="address_state">Estado</label>
+                <select class="form-control customer-lead-address" id="address_state" name="address_state">
+                    <option selected>Selecione</option>
+                                            <option value="AC" >AC</option>
+                                            <option value="AL" >AL</option>
+                                            <option value="AP" >AP</option>
+                                            <option value="AM" >AM</option>
+                                            <option value="BA" >BA</option>
+                                            <option value="CE" >CE</option>
+                                            <option value="DF" >DF</option>
+                                            <option value="ES" >ES</option>
+                                            <option value="GO" >GO</option>
+                                            <option value="MA" >MA</option>
+                                            <option value="MT" >MT</option>
+                                            <option value="MS" >MS</option>
+                                            <option value="MG" >MG</option>
+                                            <option value="PA" >PA</option>
+                                            <option value="PB" >PB</option>
+                                            <option value="PR" >PR</option>
+                                            <option value="PE" >PE</option>
+                                            <option value="PI" >PI</option>
+                                            <option value="RJ" >RJ</option>
+                                            <option value="RN" >RN</option>
+                                            <option value="RS" >RS</option>
+                                            <option value="RO" >RO</option>
+                                            <option value="RR" >RR</option>
+                                            <option value="SC" >SC</option>
+                                            <option value="SP" >SP</option>
+                                            <option value="SE" >SE</option>
+                                            <option value="TO" >TO</option>
+                                    </select>
+            </div>
+        </div>
+    </div>
+
+    </form>
+</div>
+                </div>
+            </div> <!-- /col-12 -->
+            <div class="col-12 col-md-6">
+                <div class="card">
+    <div class="card-header text-center">
+        <h4>
+                            2 - Selecionar Pagamento
+                    </h4>
+    </div>
+    <div class="card-body">
+                <input type="hidden" id="retry-payments" value="[&quot;creditcard&quot;,&quot;boleto&quot;]">
+        <input type="hidden" name="order_bump_active" id="order-bump-active" value="0">
+
+        <div class="nav nav-tabs" role="tablist" id="payment-tabs">
+                                                <a class="nav-link
+                         active                         "
+                        id="home-tab-creditcard" data-toggle="tab" href="#creditcard"
+                        role="tab" aria-controls="home" aria-selected="true">
+                            <span class="icon-credit-card"
+                                aria-hidden="true"></span>
+                        Cartão <span class="d-none d-sm-inline-block">de Crédito</span>
+                    </a>
+                
+                
+                                            
+                                    <a class="nav-link
+                                                "
+                        id="home-tab-boleto" data-toggle="tab" href="#boleto"
+                        role="tab" aria-controls="home" aria-selected="true">
+                        <span class="icon-barcode"
+                            aria-hidden="true"></span>
+                        Boleto
+                    </a>
+                
+                                            
+                
+                                    <a class="nav-link
+                                                "
+                        id="home-tab-pix" data-toggle="tab" href="#pix"
+                        role="tab" aria-controls="home" aria-selected="true">
+                        Pix
+                    </a>
+                                    </div>
+                <div class="tab-content mt-4" id="payment-contents">
+                            <div class="tab-pane fade
+                         show active "
+                    id="creditcard" role="tabpanel"
+                    aria-labelledby="home-tab">
+                    <div class="row mb-4">
+    <div class="col-12 text-center">
+                    <span class="d-inline-block align-middle payment-flag">
+            <div class="chk-flag-option visa btn-creditcard-show payment-flag-svg">
+    <svg viewBox="0 0 160 107">
+        <path d="M0 18h160v71H0z" fill="#FFF"></path>
+        <g fill-rule="nonzero">
+            <path d="M111.614545 32.7821084C109.372 31.9224828 105.858424 31 101.470273 31c-11.1838791 0-19.0618488 5.7551133-19.1290912 14.0028374-.063 6.0969261 5.6241818 9.4979311 9.9175152 11.5277833 4.4057575 2.0797044 5.8867878 3.4062069 5.8655757 5.2633103-.0277879 2.8441774-3.5182424 4.1435862-6.7713333 4.1435862-4.5302727 0-6.937-.6430936-10.6542121-2.2273103l-1.4585455-.6743054-1.5885757 9.4985813c2.6434545 1.1843152 7.5322121 2.2106206 12.6080606 2.2637241 11.8976663 0 19.6214243-5.6890049 19.7092423-14.4965911.042636-4.8269951-2.973091-8.5002365-9.502818-11.5284335-3.9562728-1.9628769-6.3791213-3.2726897-6.3534546-5.2602759 0-1.7636847 2.0507878-3.6496158 6.4817876-3.6496158 3.701303-.0587389 6.382303.7659902 8.471485 1.6256158l1.014152.4896355 1.534484-9.1964335m29.02391-1.0041971h-8.74597c-2.709212 0-4.736879.7555862-5.926667 3.5186995l-16.809757 38.8853793h11.885363s1.943243-5.2284137 2.382758-6.3763152c1.298818 0 12.845.0182069 14.495515.0182069.338758 1.4853793 1.377091 6.3581083 1.377091 6.3581083h10.502545l-9.160878-42.4040788zm-13.95694 27.3489261c.936091-2.4447093 4.509485-11.8613596 4.509485-11.8613596-.066818.1129261.929091-2.4566305 1.500758-4.049734l.764909 3.6582858s2.167242 10.1284532 2.620333 12.2523743l-9.395485.0004335zM59.2498788 74.1685517l7.0765757-42.4311724h11.3185758l-7.0814545 42.4311724zm-9.4930606-42.4001773L38.6756061 60.7032512l-1.1806667-5.8801773c-2.0628788-6.7783842-8.4901515-14.1224828-15.6755455-17.7991921l10.132394 37.1080394 11.975303-.0138719 17.8190303-42.3496749h-11.989303"
+                  fill="#265697"></path>
+            <path d="M28.3955758 31.7421478H10.1444545L10 32.6249655c14.1991818 3.5121971 23.5946667 11.9998621 27.4947273 22.1981084l-3.9685758-19.4987192c-.6851515-2.6868178-2.672303-3.4885714-5.1305757-3.5822069"
+                  fill="#D97B16"></path>
+        </g>
+        <path d="M0 89h160v9c0 4.970563-4.029437 9-9 9H9c-4.97056275 0-9-4.029437-9-9v-9z"
+              fill="#D97B16"></path>
+        <path d="M0 18h160V9c0-4.9705627-4.029437-9-9-9H9C4.02943725 0 0 4.0294373 0 9v9z"
+              fill="#265697"></path>
+    </svg>
+</div>            </span>
+                    <span class="d-inline-block align-middle payment-flag">
+            <div class="chk-flag-option master btn-creditcard-show payment-flag-svg">
+    <svg viewBox="0 0 160 107">
+        <path d="M10 0h140c5.522847 0 10 4.4771525 10 10v87c0 5.522847-4.477153 10-10 10H10c-5.5228475 0-10-4.477153-10-10V10C0 4.4771525 4.4771525 0 10 0z"
+              fill="#265697"></path>
+        <path d="M133.692178 45.4885972c0 18.4912353-14.7672144 33.4813458-32.9835004 33.4813458-18.2162861 0-32.9835054-14.9901105-32.9835054-33.4813458 0-18.4912381 14.7672193-33.4813475 32.9835054-33.4813475 18.216286 0 32.9835004 14.9901094 32.9835004 33.4813475z"
+              fill="#F79F1A"></path>
+        <path d="M93.0020235 45.4885972c0 18.4912353-14.7672148 33.4813458-32.9835009 33.4813458-18.216286 0-32.9835053-14.9901105-32.9835053-33.4813458 0-18.4912381 14.7672193-33.4813475 32.9835053-33.4813475 18.2162861 0 32.9835009 14.9901094 32.9835009 33.4813475z"
+              fill="#EA001B"></path>
+        <path d="M80.3636668 19.13183594C72.6677814 25.2611816 67.7277361 34.7858136 67.7277361 45.4854601c0 10.6996464 4.9400453 20.231548 12.6359307 26.3608941 7.6958855-6.1293461 12.6359308-15.6612477 12.6359308-26.3608941 0-10.6996465-4.9400453-20.2242785-12.6359308-26.35362416z"
+              fill="#FF5F01"></path>
+        <path d="M133.63046233 63.25384976v-1.19500512h-.30794923l-.35424226.82182091-.35424226-.82182091h-.30794922v1.19500512h.21737592v-.901352l.33210213.77695726h.2254269l.3321021-.7789965v.90339124h.21737592zm-1.95034514 0v-.99107934h.39449705v-.20188653h-1.0043573v.20188653h.39449706v.99107934h.21536319z"
+              fill="#F79F1A" fill-rule="nonzero"></path>
+        <path d="M34.10179446 94.8510968h-1.88108538v-9.04170155h1.8442013v1.10171918s1.61981031-1.346491 2.58188193-1.3296601c1.87061769.03272767 2.98760538 1.67157385 2.98760538 1.67157385s.90609923-1.67157385 2.95072381-1.67157385c3.0235477 0 3.4670977 2.84927572 3.4670977 2.84927572v6.38237655h-1.8073177v-5.62257112s.0064847-1.709564-1.954853-1.709564c-2.02822158 0-2.21304235 1.709564-2.21304235 1.709564v5.62257112h-1.88108538v-5.66056127s-.18070846-1.78554669-1.88108469-1.78554669c-2.20838054 0-2.2499257 1.82353684-2.2499257 1.82353684l.03688408 5.66056132zm57.20589784-9.27087609c-.9620723-.01682852-2.5817308 1.32958404-2.5817308 1.32958404v-1.09932088h-1.8461538v9.03968593h1.8822115l-.0360577-5.660017s.0416193-1.81982173 2.25-1.81982173c.410137 0 .7286677.1023236.9807693.25997453v-.00741596l.6129807-1.76039898c-.3699-.16035586-.7905577-.27402207-1.2620192-.28226995zm26.4982408 0c-.9620723-.01682852-2.5817308 1.32958404-2.5817308 1.32958404v-1.09932088h-1.8461538v9.03968593h1.8822115l-.0360577-5.660017s.0416192-1.81982173 2.25-1.81982173c.4101369 0 .7286677.1023236.9807692.25997453v-.00741596l.6129808-1.76039898c-.3699-.16034397-.7905577-.27401018-1.2620192-.28225806v-.00001189zm-65.6713177-.03713922c-2.8151723 0-4.3049769 2.60613209-4.3125 4.78353141-.0077308 2.2318068 1.6960108 4.8058149 4.3918269 4.8058149 1.5727246 0 2.8647254-1.1958828 2.8647254-1.1958828l-.0034154.9210526h1.8515885v-9.05067434h-1.85811v1.14002071s-1.2133154-1.40386248-2.9341062-1.40386248h-.0000092zm.3605769 1.84210527c1.5125077 0 2.7403846 1.35510492 2.7403846 3.02313243S54.0077 93.4240238 52.4951923 93.4240238s-2.7331731-1.3476771-2.7331731-3.01570461c0-1.66802751 1.2206654-3.02313243 2.7331731-3.02313243zm53.6376369-1.84210527c-2.8151723 0-4.3049769 2.60613209-4.3125 4.78353141-.0077307 2.2318068 1.6960108 4.8058149 4.391827 4.8058149 1.5727246 0 2.8647253-1.1958828 2.8647253-1.1958828l-.0034153.9210526h1.8515884v-9.05067434h-1.85811v1.14002071s-1.2133154-1.40386248-2.9341061-1.40386248h-.0000093zm.360577 1.84210527c1.5125076 0 2.7403846 1.35510492 2.7403846 3.02313243s-1.227877 3.01570461-2.7403846 3.01570461c-1.5125077 0-2.7331731-1.3476771-2.7331731-3.01570461 0-1.66802751 1.2206654-3.02313243 2.7331731-3.02313243zm17.4175246-1.84210527c-2.8151723 0-4.304977 2.60613209-4.3125 4.78353141-.0077308 2.2318068 1.6960107 4.8058149 4.3918269 4.8058149 1.5727246 0 2.8647254-1.1958828 2.8647254-1.1958828l-.0034154.9210526h1.8515885V82.23411375h-1.85811v4.71283022s-1.2133154-1.40386248-2.9341062-1.40386248h-.0000092zm.3605769 1.84210527c1.5125077 0 2.7403846 1.35510492 2.7403846 3.02313243s-1.2278769 3.01570461-2.7403846 3.01570461-2.7331731-1.3476771-2.7331731-3.01570461c0-1.66802751 1.2206654-3.02313243 2.7331731-3.02313243zM62.5762631 95.155018c-1.9179116 0-3.6884031-1.2156896-3.6884031-1.2156896l.8114492-1.2916724s1.6752393.797798 2.8769539.797798c.7807846 0 2.0866315-.2596893 2.1023884-1.063729.0166616-.84978816-2.1945992-1.1017216-2.1945992-1.1017216s-3.3011192-.04638303-3.3011192-2.84927335c0-1.76275925 1.6486684-2.88726587 3.7621707-2.88726587 1.2212031 0 3.5039816 1.10171918 3.5039816 1.10171918l-.9221008 1.48162309s-1.7625531-.72528794-2.6925346-.75980781c-.7852938-.02914805-1.7335477.35812903-1.7335477 1.06373141 0 1.91705161 5.4957185-.14936978 5.4957185 3.72305165 0 2.5405151-2.2382285 3.0012363-4.0203577 3.0012363zm7.0751792-11.96656299v2.6294567h-1.6370192v1.90152802h1.6370192v4.54584037s-.1448815 3.0751274 3.0649039 3.0751274c.8874346 0 2.625-.6759338 2.625-.6759338l-.7427885-1.9758065s-.6909854.6070985-1.4711539.5867997c-1.4833869-.0385796-1.4423076-1.0176146-1.4423076-1.0176146v-4.53841257h3.0576923v-1.90152802h-3.0576923v-2.6294567h-2.0336539zm11.1418269 2.46604414c-3.0186046 0-4.5268154 2.56090662-4.514423 4.78353141.0127384 2.28572224 1.3733976 4.85780984 4.6947115 4.85780984 1.4215592 0 3.4182692-1.285017 3.4182692-1.285017l-.8581731-1.5375636s-1.3625284.995331-2.5600961.995331c-2.3976808 0-2.5528846-2.4140492-2.5528846-2.4140492h6.4182692s.4788277-5.40004245-4.0456731-5.40004245zm-.2740384 1.77525467c.0711784-.00415959.1474846 0 .2235577 0 2.2588384 0 2.24279 2.19864177 2.24279 2.19864177h-4.5649054s-.1079862-2.0694377 2.0985577-2.19864177zm19.3653207 5.02023598l.8606723 1.7729728s-1.3641161.9133491-2.8949838.9133491c-3.1693985 0-4.9293-2.4568669-4.9293-4.78165364 0-3.65371001 2.8006892-4.72792835 4.6945708-4.72792835 1.7190484 0 3.2079554 1.02080204 3.2079554 1.02080204l-.9649939 1.77297283s-.5850415-.9402129-2.2951246-.9402129c-1.7072285 0-2.6080939 1.51608829-2.6080939 2.95495552 0 1.6124482 1.0485693 2.981817 2.6341754 2.981817 1.2438785 0 2.2951223-.9670744 2.2951223-.9670744zm32.70078513 1.16036579c-.26060984.00656155-.47529255.09558708-.64404884.2670769-.16875703.17149572-.25609323.3861059-.26200888.64383126.00591565.25577628.09325187.46982831.26200895.64215667.16875631.1723317.38343903.26191542.64404877.26875149.25464687-.00683607.46662008-.09641983.63592028-.26875155.16929691-.17232843.25717506-.38638042.26363466-.64215661-.00632414-.25772535-.09393133-.47233558-.26282186-.64383132-.16889385-.17148986-.38113798-.26051538-.63673308-.26707684zm0 1.6208807c-.19856224-.00502177-.36230637-.07423288-.49123296-.20763356-.12892762-.13339708-.19567159-.30084323-.20023213-.50233898.00456063-.20237513.07130464-.36972834.2002322-.50206013.12892652-.13232619.29267065-.20088605.49123289-.2056798.19440557.00479385.3556208.0733537.48364619.20567987.1280224.13233172.19440516.29968493.19914853.50206006-.00474337.20149582-.07112613.368942-.19914847.50233898-.12802536.13340058-.28924059.20261169-.48364625.20763356zm.05202246-1.1364026h-.3793304v.84616225h.17557581v-.31703177h.08020128l.24927426.31703177h.21025742l-.26878268-.31926438c.08394813-.01083533.1485245-.03883611.19372933-.08400236.04520216-.04516172.06805231-.10274456.06855052-.17274872-.00058847-.08353467-.02921887-.14921082-.08589128-.19702865-.05667501-.04781251-.13786969-.07218522-.24358426-.07311814zm-.00216763.15851588c.04709905.00004905.08403852.00944474.11081852.02818668.02677777.01874711.04041553.04656185.04091364.08344417-.0004995.03795677-.01413577.0664226-.04091358.08539748-.02677997.01897976-.06371953.02846818-.11081858.02846592h-.201587v-.22549444l.201587 1.9e-7z"
+              fill="#FFF" fill-rule="nonzero"></path>
+    </svg>
+</div>            </span>
+                    <span class="d-inline-block align-middle payment-flag">
+            <div class="chk-flag-option amex btn-creditcard-show payment-flag-svg">
+    <svg viewBox="0 0 160 107">
+        <path d="M148 .00000108c-8 8.1e-7-92.6992188-.0000028-140 0-4 2.4e-7-8 4.27999994-8 8.55999988V94.1599997C-4.6e-7 102.72 4 107 12 107c44.6232096 0 128 .000001 136 0 8 0 12-4.28 12-12.8400003V12.8400009c0-8.55999988-4-12.83999982-12-12.83999982z"
+              fill="#306FC5"></path>
+        <path d="M13.5198284 39.625336l-3.0987822-7.5509964-3.08107159 7.5509964h6.17985379zm68.2657601-3.0068014c-.622156.3776355-1.3580025.3902043-2.2395329.3902043H74.04606v-4.2071224h5.5748372c.7889782 0 1.6122351.0354212 2.1469807.341643.587306.2759425.9506588.8632485.9506588 1.6745079 0 .8278273-.3456422 1.493974-.9329482 1.8007672 0 0 .587306-.3067932 0 0zm39.2363865 3.0068014l-3.13306-7.5509964-3.115922 7.5509964h6.248982zm-73.1390289 8.1731522h-4.6413175l-.0171393-14.8346198-6.5649163 14.8346198h-3.9751708l-6.5820556-14.84776v14.84776h-9.2083649l-1.7396371-4.224833H5.72773948l-1.75734771 4.224833h-4.91726l8.10745169-18.9411918h6.72659684l7.7001081 17.933402v-17.933402h7.3893158l5.9250497 12.8493197 5.4428647-12.8493197h7.5378562v18.9411918h.0005713zm18.498427 0H51.2570994V28.8572964h15.1242737v3.9443201H55.7847264v3.414145h10.3424141v3.8826186H55.7847264v3.7826396h10.5966467v3.9174685zM87.7060678 33.958518c0 3.0199415-2.0155796 4.5801875-3.1901917 5.0486612.9906505.3770642 1.8367597 1.0432109 2.2395328 1.5950958.6392952.9420892.749558 1.783628.749558 3.4752751v3.7209381h-4.5664761l-.0171392-2.3886446c0-1.1397622.10912-2.7788489-.7147081-3.6900874-.6615763-.6661467-1.6699374-.810688-3.2998831-.810688h-4.8601291v6.88942h-4.5270556V28.8572964h10.4132564c2.3138031 0 4.0185903.0611301 5.482285.9072393 1.4322726.8461092 2.2909507 2.0812802 2.2909507 4.1939823 0 0 0-2.1127021 0 0zm7.2453458 13.8399702h-4.6196078V28.8572964h4.6196078v18.9411918zm53.5933924 0h-6.415805l-8.581638-14.2164631v14.2164631H124.327l-1.761918-4.224833h-9.404895l-1.709358 4.224833h-5.297752c-2.200684 0-4.98696-.4867556-6.564916-2.0949915-1.591097-1.608236-2.4189243-3.7866387-2.4189243-7.2310631 0-2.8091283.4947539-5.3771641 2.4406333-7.4064551 1.463695-1.5116846 3.755788-2.2086821 6.875709-2.2086821h4.383086v4.058582h-4.291105c-1.652227 0-2.585175.245663-3.483845 1.1220516-.771839.797548-1.301443 2.3052335-1.301443 4.2905336 0 2.029291.403345 3.4924144 1.244883 4.448215.696998.7495579 1.963591.9769391 3.155342.9769391h2.03329l6.380955-14.89575h6.783728l7.665258 17.9156915V28.8578677h6.893419l7.95834 13.191534v-13.191534h4.637319v18.9406205zM-.9994287 51.518855h7.73552927l1.7442076-4.2071224h3.90489973l1.7396371 4.2071224h15.2202537v-3.2164719l1.3585738 3.2301833h7.901209l1.3585737-3.2781733v3.2644619h37.8252527l-.0177106-6.905988h.7318474c.5124645.0177106.6621476.0651293.6621476.9112385v5.9947495H98.72834v-1.6076646c1.577957.8455379 4.032302 1.6076646 7.261914 1.6076646h8.230283l1.761347-4.2071224h3.9049l1.722497 4.2071224h15.860121v-3.9963092l2.401784 3.9963092h12.709349V25.1015084h-12.577947v3.1199206l-1.761347-3.1199206H125.33479v3.1199206l-1.617377-3.1199206h-17.433506c-2.918249 0-5.483428.4073436-7.555567 1.5425354v-1.5425354H86.6977067v1.5425354c-1.3185821-1.1700417-3.1153502-1.5425354-5.1132191-1.5425354h-43.952546l-2.9490992 6.8231482-3.0285111-6.8231482H17.810362v3.1199206l-1.5208257-3.1199206h-11.80668L-1 37.6617456V51.518855h.0005713zM160.039551 65.4668027h-8.251422c-.823828 0-1.371142.0308507-1.832189.3422143-.477615.3067932-.661576.7621268-.661576 1.3631442 0 .7147081.403344 1.2008924.990079 1.4111343.477614.166251.99065.2148123 1.744779.2148123l2.453774.0657006c2.476055.0611301 4.128853.4867556 5.136642 1.5248248.183391.1445412.293653.3067931.419913.469045v-5.3908755zm0 12.4905374c-1.099771 1.6082359-3.242752 2.4234945-6.143861 2.4234945h-8.74332v-4.0625812h8.707898c.86382 0 1.468265-.1136906 1.83219-.469045.315362-.2930817.535316-.7187072.535316-1.2357422 0-.5518849-.219954-.9900792-.553027-1.2528815-.328503-.2890826-.806689-.4204838-1.595096-.4204838-4.251113-.1445412-9.554578.1314012-9.554578-5.8639196 0-2.7479982 1.744779-5.6405377 6.495788-5.6405377h9.018118l.000572-3.7694994h-8.379395c-2.528616 0-4.365375.6055879-5.666247 1.5471058v-1.5471058h-12.393415c-1.981872 0-4.308244.491326-5.408586 1.5471058v-1.5471058h-22.131383V59.21325c-1.761347-1.2705921-4.733299-1.5471058-6.105012-1.5471058H85.3574148V59.21325c-1.3934236-1.3494328-4.4922058-1.5471058-6.3809546-1.5471058H62.6387253l-3.7386487 4.0460131-3.5015553-4.0460131h-24.405195v26.4356285h23.9458622l3.8523393-4.1099998 3.6289573 4.1099998 14.7603496.0131401V77.89621h1.4511259c1.9584486.0302794 4.2682525-.0485613 6.3061131-.9295204v7.1345118H97.112677V77.21121h.5873061c.7495579 0 .8232568.0308507.8232568.7798373v6.1095828h36.9842851c2.348082 0 4.802427-.6010175 6.161572-1.6916472v1.6916472h11.731267c2.441205 0 4.825279-.3422144 6.639187-1.218603v-4.924687zm-18.059662-7.5687069c.881531.9123811 1.354004 2.0641408 1.354004 4.0140198 0 4.0757213-2.546326 5.9781816-7.112231 5.9781816h-8.818161v-4.0625812h8.78274c.858678 0 1.467694-.1136906 1.849328-.469045.311364-.2930817.534746-.7187072.534746-1.2357422 0-.5518849-.241664-.9900792-.552456-1.2528815-.346214-.2890826-.823828-.4204838-1.612235-.4204838-4.233974-.1445412-9.536297.1314012-9.536297-5.8639196 0-2.7479982 1.726497-5.6405377 6.472936-5.6405377h9.076392v4.0323017h-8.305125c-.823257 0-1.358573.0308507-1.813907.3422143-.495897.3067932-.679858.7621268-.679858 1.3631443 0 .714708.421055 1.2008923.99065 1.4111342.477615.166251.990651.2148123 1.761918.2148123l2.437206.0657006c2.457773.0599875 4.14485.4850417 5.17035 1.5236822 0 0-1.0255-1.0386405 0 0zm-40.853192-1.1700417c-.605588.3593536-1.354575.3902043-2.2355338.3902043h-5.4999956v-4.2551124h5.5748371c.8061173 0 1.6128063.0171393 2.1606923.3422144.586735.3067931.937519.8935279.937519 1.7042159 0 .810688-.350784 1.4636947-.937519 1.8184778 0 0 .586735-.3547831 0 0zm2.734287 2.3577939c1.007789.3719224 1.831618 1.0386405 2.217823 1.5905254.639295.9249499.731847 1.7881984.750129 3.4581358v3.755788h-4.545338v-2.3703627c0-1.1397623.109692-2.8274103-.731847-3.7083694-.661576-.6787155-1.669937-.8409674-3.3215928-.8409674h-4.8384193v6.9196995h-4.5493367V61.4350723H99.295079c2.292093 0 3.961459.1011217 5.447435.8940992 1.428845.8632485 2.327515 2.0458589 2.327515 4.2071224-.000572 3.0239406-2.017294 4.5670473-3.209045 5.0400915 0 0 1.191751-.4730442 0 0zm5.719378-10.1413131h15.110562v3.9180398h-10.601788v3.4444244h10.342985v3.8654794h-10.342985v3.7694994l10.601788.0171393v3.93118h-15.110562V61.4350723zm-30.5461996 8.743319h-5.8507796v-4.8247079h5.9033401c1.6345162 0 2.7691366.6661468 2.7691366 2.322944 0 1.6385154-1.08206 2.5017639-2.8216971 2.5017639zm-10.3601246 8.4793741l-6.9511215-7.7172474 6.9511215-7.4721556v15.189403zm-17.9511127-2.2252501H39.5915328v-3.7694994h9.9396409v-3.8654794h-9.9396409v-3.4444244h11.3507751l4.9521099 5.5211341-5.1714927 5.5582691zm35.9936348-8.7558879c0 5.2629022-3.9266095 6.3495327-7.8840697 6.3495327h-5.6491074v6.3546745h-8.7998786L58.8086671 74.109l-5.7936487 6.2718346h-17.933402V61.4350723h18.2093445l5.5702666 6.2101331 5.7587988-6.2101331h14.4666966c3.5929648 0 7.629837.9946496 7.629837 6.2415551 0 0 0-5.2469055 0 0z"
+              fill="#FFF"></path>
+    </svg>
+</div>            </span>
+                    <span class="d-inline-block align-middle payment-flag">
+            <div class="chk-flag-option diners btn-creditcard-show payment-flag-svg">
+    <svg viewBox="0 0 160 107">
+        <g fill="none" fill-rule="evenodd">
+            <rect fill="#4186CD" height="107" rx="10" width="160"></rect>
+            <path d="M73.4632834 82.7771131c-15.5564714.0746358-28.3728902-12.6980389-28.3728902-28.2644186 0-16.5720525 12.3872438-28.7587837 28.3710003-28.7529742h13.0489882c16.0790933-.0059141 29.3992253 12.4130277 29.3992253 28.7529742 0 15.3262217-13.776206 28.3396305-29.400032 28.2644231l-13.0462916-.0000045zm13.0472432-.8005589c15.1963724.0736653 28.6048944-12.5921133 28.6048944-27.4638597 0-15.8832017-12.951196-27.9581685-28.6048944-27.9524108H73.4612503c-15.5493735-.0056517-27.5766712 11.8269599-27.5766712 27.9524108 0 15.1215525 12.4573604 27.5363944 27.5768144 27.4638597h13.0491331z"
+                  fill="#FFF" fill-rule="nonzero"></path>
+            <path d="M73.2730341 28.4086863C59.15451 28.4131699 47.713828 39.9865379 47.7105029 54.2703719 47.713828 68.55174 59.1543992 80.123987 73.2730341 80.1284706 87.3948835 80.123987 98.8378933 68.55174 98.8398882 54.2703719c-.0021057-14.283834-11.4450047-25.857202-25.5668541-25.8616856zM57.7140783 53.7081867c.0127909-6.9266311 4.1581191-12.8332331 10.0035752-15.1804122v30.3572646c-5.8454561-2.3458441-9.9908909-8.2492203-10.0035752-15.1768524zm21.1186591 15.1768524V38.5277745c5.843852 2.3409143 9.9929233 8.2493595 10.0035754 15.1775759-.0106521 6.9303294-4.1597234 12.8343263-10.0035754 15.1796887z"
+                  fill="#FFF" fill-rule="nonzero"></path>
+        </g>
+    </svg>
+</div>            </span>
+                    <span class="d-inline-block align-middle payment-flag">
+            <div class="chk-flag-option elo btn-creditcard-show payment-flag-svg">
+    <svg viewBox="0 0 160 107">
+        <defs>
+            <path d="M.03098816.06088772H21.9581711V15.9478324H.03098816z" id="a"></path>
+        </defs>
+        <g fill="none" fill-rule="evenodd">
+            <rect fill="#231F20" height="107" rx="10" width="160"></rect>
+            <path d="M31.622223 38.0150566c1.6273693-.5325931 3.3671584-.8192374 5.17798-.8192374 7.8986699 0 14.4928786 5.496952 16.0033341 12.8041808L64 47.7623844C61.4306527 35.34505984 50.2309281 26 36.800203 26c-3.0774472 0-6.0337767.49125839-8.800203 1.3966454l3.622223 10.6184112z"
+                  fill="#FFCA05"></path>
+            <path d="M17.40155152 73L25 64.7644311c-3.3920567-2.8808418-5.5317322-7.0849198-5.5317322-11.7685453 0-4.6802086 2.1371296-8.8821946 5.5270768-11.759759L17.39507758 33C11.63508425 37.8921942 8 45.0384084 8 52.9958858 8 60.9588023 11.63653907 68.1071782 17.40155152 73"
+                  fill="#00A4DF"></path>
+            <path d="M52.8064693 57c-1.5163334 7.3075891-8.103176 12.7976263-15.99785 12.7976263-1.8120919 0-3.5561326-.2860467-5.1823337-.8224644L28 79.6045181C30.7659695 80.5099184 33.727976 81 36.8086193 81 50.2246514 81 61.4205736 71.664428 64 59.2503531L52.8064693 57z"
+                  fill="#EE4123"></path>
+            <path d="M94.851267 63.4561271c-.0036816.0029809-.005775.0058163-.0089513.0087245l-.3172665-.2152777c-.913179 1.492912-2.3378105 2.7016952-4.1365926 3.4872662-3.4213533 1.4986556-6.5917087 1.113395-8.8685924-.8981901l-.2094176.3206991c-.0023822-.0035625-.0031762-.006398-.0064247-.006398l-3.8827794 5.8503043c.9637829.6749876 1.9987431 1.2460079 3.085751 1.7030277 4.289126 1.7941263 8.6780159 1.7117522 13.0012146-.1821245 3.1274757-1.364516 5.5805704-3.446479 7.2580045-6.0842671l-5.9149456-3.9837644zM82.729664 49.0215424c-3.6130848 1.5639442-5.4757534 4.97727-5.092507 8.9797195l15.3055298-6.6345666C90.31071 48.251821 86.885242 47.2194187 82.729664 49.0215424zM72.5676781 66.8437155c-.3653438-.5960306-.8615645-1.5496214-1.1610728-2.2510734-1.7657201-4.1286643-1.8504688-8.4014287-.3589191-12.5035559 1.6396797-4.4980027 4.771631-7.9422279 8.8182051-9.695567 5.0880313-2.2052696 10.7148021-1.7704973 15.5914667 1.1434947 3.0978786 1.7899821 5.2932619 4.5533307 6.9613115 8.4609737.2123051.4999881.3988391 1.0345108.5813305 1.4886224L72.5676781 66.8437155zM113.060582 33v31.5173162L118 66.5033956 115.193606 73l-5.452363-2.2522332c-1.223457-.5255446-2.0566824-1.3297827-2.6873007-2.2382845C106.451233 67.5835095 106 66.3135374 106 64.6034041V33h7.060582zm13.046472 24.5003571c.002994-2.7206639 1.121541-5.1601063 2.892946-6.8181559L124.252212 45c-3.220173 3.0553016-5.248609 7.5192099-5.252202 12.492716-.005322 4.9753627 2.020252 9.4443412 5.237165 12.507284l4.742465-5.6879142c-1.762422-1.665048-2.874516-4.0974206-2.872586-6.8117287m9.279781 10.2791739c-1.018888-.0031534-1.999921-.1814327-2.91518-.5046889L130 75.0679863c1.688816.6017503 3.498012.9288521 5.379003.9320055 8.193888.0082294 15.036028-6.157866 16.620997-14.3547152L144.403593 60c-.863988 4.4442926-4.573102 7.7832996-9.016758 7.779531"
+                  fill="#FFF"></path>
+            <g transform="translate(130 41)">
+                <mask fill="#fff" id="b">
+                    <use xlink:href="#a"></use>
+                </mask>
+                <path d="M5.39377763.06089905C3.51929079.05868952 1.71478421.37968.03098816.96985143l2.44431579 7.72685714c.91618421-.31870476 1.89503947-.49455238 2.91051316-.49455238 4.44515789.00441905 8.14911839 3.33188571 8.99098029 7.74567621l7.5813881-1.6186667C20.3986461 6.19781333 13.5769816.0669181 5.39377763.06089905"
+                      fill="#FFF" mask="url(#b)"></path>
+            </g>
+        </g>
+    </svg>
+</div>            </span>
+        
+            </div>
+</div>
+<form id="form-creditcard" onsubmit="return false;">
+    <input type="hidden" name="_token" value="DxMLl8mFIeoyLzc8NvF9CWnaSTaJ2oZrZghOyMKa">
+    <input type="hidden" name="bundle_id" value="1325195">
+    <input type="hidden" name="coupon" value="">
+    <input type="hidden" name="shopify_cart" value="">
+    <input type="hidden" id='public_key' name="public_key" value="">
+    <input type="hidden" id='gateway_flow' name="gateway_flow" value="0">
+    <input type="hidden" name="hidden_freight" value="">
+    <div class="form-group row">
+        <div class="col-12 mb-1">
+            <label for="number" class="font-weight-bold">
+                Número do cartão
+                <span
+                        id="tooltip-teste"
+                        class="icon-help-circled text-muted question-tooltip d-none d-lg-inline-block"
+                        aria-hidden="true"
+                        data-toggle="tooltip"
+                        data-html="true"
+                        data-template='<div class="tooltip fade tooltip-transparent" role="tooltip"><div class="tooltip-inner"></div></div>'
+                        data-placement="right"
+                        title="<img style='width:250px' src='https://curcumini.carrinho.app/checkout-public/one-checkout/monetizze/images/card_helper/creditcard_number.png'>"></span>
+            </label>
+            <input type="tel" class="form-control" id="number" name="number">
+        </div>
+        <div class="col-12 col-sm-6 mb-1">
+            <label for="name" class="font-weight-bold">
+                Nome do titular
+                <span
+                        id="tooltip-teste"
+                        class="icon-help-circled text-muted question-tooltip d-none d-lg-inline-block"
+                        aria-hidden="true"
+                        data-toggle="tooltip"
+                        data-html="true"
+                        data-template='<div class="tooltip fade tooltip-transparent" role="tooltip"><div class="tooltip-inner"></div></div>'
+                        data-placement="right"
+                        title="<img style='width:250px' src='https://curcumini.carrinho.app/checkout-public/one-checkout/monetizze/images/card_helper/creditcard_name.png'>"></span>
+            </label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Como impresso no cartão">
+        </div>
+        <div class="col-12 col-sm-6 mb-1">
+            <label for="cpfcartao" class="font-weight-bold">
+                CPF do titular
+            </label>
+            <span class="icon-help-circled text-muted d-none d-lg-inline-block" aria-hidden="true" data-toggle="tooltip"
+                  data-html="true" data-placement="right"
+                  title="Precisamos do seu CPF para emissão da nota fiscal"></span>
+            <input type="tel" class="form-control" id="cpfcartao" name="cpfcartao" placeholder="Para emissão da nota fiscal">
+        </div>
+        <div class="col-12 col-sm-6 mb-1 mb-sm-0">
+            <label for="month" class="font-weight-bold">
+                Data de expiração
+                <span
+                        id="tooltip-teste"
+                        class="icon-help-circled text-muted question-tooltip d-none d-lg-inline-block"
+                        aria-hidden="true"
+                        data-toggle="tooltip"
+                        data-html="true"
+                        data-template='<div class="tooltip fade tooltip-transparent" role="tooltip"><div class="tooltip-inner"></div></div>'
+                        data-placement="right"
+                        title="<img style='width:250px' src='https://curcumini.carrinho.app/checkout-public/one-checkout/monetizze/images/card_helper/creditcard_date.png'>"></span>
+            </label>
+            <div class="row no-gutters">
+                <div class="col-6">
+                    <select class="form-control" id="month" name="month">
+                        <option value="">Mês</option>
+                                                    <option  value="01">01 | Janeiro</option>
+                                                    <option  value="02">02 | Fevereiro</option>
+                                                    <option  value="03">03 | Mar&ccedil;o</option>
+                                                    <option  value="04">04 | Abril</option>
+                                                    <option  value="05">05 | Maio</option>
+                                                    <option  value="06">06 | Junho</option>
+                                                    <option  value="07">07 | Julho</option>
+                                                    <option  value="08">08 | Agosto</option>
+                                                    <option  value="09">09 | Setembro</option>
+                                                    <option  value="10">10 | Outubro</option>
+                                                    <option  value="11">11 | Novembro</option>
+                                                    <option  value="12">12 | Dezembro</option>
+                                            </select>
+                </div>
+                <div class="col-6">
+                    <select class="form-control" id="year" name="year">
+                        <option value="">Ano</option>
+                                                    <option  value="23">2023</option>
+                                                    <option  value="24">2024</option>
+                                                    <option  value="25">2025</option>
+                                                    <option  value="26">2026</option>
+                                                    <option  value="27">2027</option>
+                                                    <option  value="28">2028</option>
+                                                    <option  value="29">2029</option>
+                                                    <option  value="30">2030</option>
+                                                    <option  value="31">2031</option>
+                                                    <option  value="32">2032</option>
+                                                    <option  value="33">2033</option>
+                                            </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <label for="cvv" class="font-weight-bold">
+                Cód. de segurança
+                <span
+                        id="tooltip-teste"
+                        class="icon-help-circled text-muted question-tooltip d-none d-lg-inline-block"
+                        aria-hidden="true"
+                        data-toggle="tooltip"
+                        data-html="true"
+                        data-template='<div class="tooltip fade tooltip-transparent" role="tooltip"><div class="tooltip-inner"></div></div>'
+                        data-placement="right"
+                        title="<img style='width:250px' src='https://curcumini.carrinho.app/checkout-public/one-checkout/monetizze/images/card_helper/cvv.png'>"></span>
+            </label>
+            <input type="tel" class="form-control" id="cvv" name="cvv" placeholder="3 ou 4 dígitos">
+        </div>
+    </div>
+            <div class="loader-freight d-none">
+            <span class="animate-spin icon-spin5" aria-hidden="true"></span>
+                            <b>Buscando opções de frete...</b>
+                    </div>
+        <div class="form-group freight-value d-none">
+            <label for="freightOption" class="font-weight-bold">
+                Frete
+            </label>
+            <input type="hidden" name="hasFreightSettings" value="1" />
+            <input type="hidden" name="limitValue" value="5.00" />
+            <input type="hidden" name="exceptionBundle" value="195768" />
+            <input type="hidden" name="actualBundle" value="1325195" />
+                            <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input"
+                               type="radio"
+                               name="freightOption"
+                               id="freightOption"
+                               value="272"
+                               data-freight="29.90"
+                               data-total="217.8">
+                                                    R$ 29,90 - Correios - 7 a 12 dias &uacute;teis
+                                            </label>
+                </div>
+                    </div>
+        <div>
+        <label class="freight-order-bump-credit-card d-none">
+            + R$ 0,00
+        </label>
+    </div>
+    
+    <div class="form-group">
+        <label for="installments" class="font-weight-bold">
+            Parcelamento
+        </label>
+
+                    
+                            <select name="installments"
+                        id="installments"
+                        data-price-bundle="187.9"
+                        data-installment="12"
+                        data-installment-default="12"
+                        data-interest="2.99"
+                        data-interest-settings=""
+                        class="form-control parcelas parcelas-com-frete
+                        d-block"
+                ></select>
+            
+
+
+            <select name="installments_without_freight" id="installments_without_freight" class="form-control parcelas parcelas-sem-frete
+            d-none">
+                                    <option value="1" >
+                        1 x R$ 187,90
+                    </option>
+                                    <option value="2" >
+                        2 x R$ 98,19
+                    </option>
+                                    <option value="3" >
+                        3 x R$ 66,42
+                    </option>
+                                    <option value="4" >
+                        4 x R$ 50,54
+                    </option>
+                                    <option value="5" >
+                        5 x R$ 41,02
+                    </option>
+                                    <option value="6" >
+                        6 x R$ 34,68
+                    </option>
+                                    <option value="7" >
+                        7 x R$ 30,15
+                    </option>
+                                    <option value="8" >
+                        8 x R$ 26,76
+                    </option>
+                                    <option value="9" >
+                        9 x R$ 24,12
+                    </option>
+                                    <option value="10" >
+                        10 x R$ 22,02
+                    </option>
+                                    <option value="11" >
+                        11 x R$ 20,30
+                    </option>
+                                    <option value="12"  SELECTED >
+                        12 x R$ 18,87
+                    </option>
+                            </select>
+            </div>
+    
+    
+    <div id="recaptcha-creditcard" class="mb-2">
+    </div>
+    <input type="submit" class="btn btn-success submit-button" value="Finalizar Pedido">
+</form>
+                </div>
+            
+                            <div class="tab-pane fade
+                        "
+                    id="boleto" role="tabpanel"
+                    aria-labelledby="home-tab">
+                    <div class="row">
+    <div class="col-12 ">
+        <ol>
+            <li>Pagamentos por boleto s&oacute; podem ser efetuados &agrave; vista</li>
+            <li>A compensa&ccedil;&atilde;o do pagamento pode levar at&eacute; 3 dias &uacute;teis</li>
+            <li>O Boleto ser&aacute; gerado por meio da plataforma Appmax</li>
+            <li>Depois do pagamento, fique atento ao seu e-mail para acompanhar o envio do seu pedido (verifique tamb&eacute;m
+                a caixa de SPAM)
+            </li>
+        </ol>
+    </div>
+
+    <div class="div col-12">
+        
+        <table class="table-billet-m">
+            <tr>
+                <td>
+                                            <h6><b>Produtos:</b></h6>
+                                    </td>
+
+                <td>
+                                            <b class="total-products-with-freight billet-total d-none ">R$ 187,90</b>
+                        <b class="billet-total  ">R$ 187,90</b>
+                        <span class="text-success billet-success-price d-none">
+                            <b class="total-products"></b>
+                        </span>
+                                    </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="col-12">
+        <form id="form-billet" onsubmit="return false;">
+            <input type="hidden" name="_token" value="DxMLl8mFIeoyLzc8NvF9CWnaSTaJ2oZrZghOyMKa">
+            <input type="hidden" name="coupon" value="">
+            <input type="hidden" name="shopify_cart" value="">
+            
+                            <div class="loader-freight d-none">
+                    <span class="animate-spin icon-spin5" aria-hidden="true"></span>
+                                            <b>Buscando opções de frete...</b>
+                                    </div>
+                <input type="hidden" name="hasFreightSettings" value="1"/>
+                <div class="form-group row freight-value d-none">
+                    <div class="col-12 col-md-10">
+                        <label for="freightOption" class="font-weight-bold">Frete:</label>
+                                                    <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input"
+                                           type="radio"
+                                           name="freightOption"
+                                           id="freightOption"
+                                           value="272"
+                                           data-freight="29.90"
+                                           data-total="217.8">
+                                                                            R$ 29,90 - Correios - 7 a 12 dias &uacute;teis
+                                                                    </label>
+                            </div>
+                        
+                        <div>
+                            <label class="freight-order-bump d-none">
+                                + R$ 0,00
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-10">
+                        <table class="table-billet-m">
+                            <tr class="tr-space">
+                                <td colspan="2"></td>
+                            </tr>
+                                                            <tr>
+                                    <td style="min-width: 80px !important;">
+                                        <h5><b>Total:</b></h5>
+                                    </td>
+                                    <td>
+                                        <h5><b class="total-calculate"></b></h5>
+                                    </td>
+                                </tr>
+                                                    </table>
+                    </div>
+                </div>
+                        <div class="form-group row">
+                <div class="col-12 col-md-12">
+                    <label for="number" class="font-weight-bold">CPF (Para emissão da Nota Fiscal)</label>
+                    <input id="cpfboleto" name="cpfboleto" type="tel" class="form-control"
+                           value="">
+                </div>
+            </div>
+            <input type="hidden" name="bundle_id" value="1325195">
+
+            
+                        <div id="recaptcha-boleto" class="mb-2">
+            </div>
+            <input type="submit" class="btn btn-success submit-button" value="Gerar Boleto">
+        </form>
+    </div>
+</div>
+                </div>
+            
+                            <div class="tab-pane fade
+                        "
+                    id="pix" role="tabpanel"
+                    aria-labelledby="home-tab">
+                    <div id="form-pix" class=>
+    <div class="pix-payment">
+        <pix-form 
+            :bundle="{&quot;id&quot;:1325195,&quot;bundle_group_id&quot;:10903,&quot;bundle_identifier&quot;:null,&quot;bundle_production_cost&quot;:&quot;0.00&quot;,&quot;image&quot;:&quot;selfservice\/site\/bundle\/logo_top\/2946\/62339d2d44703.png&quot;,&quot;image_onecheckout&quot;:null,&quot;image_main_kit&quot;:null,&quot;name&quot;:&quot;1 Frasco&quot;,&quot;description&quot;:&quot;a&quot;,&quot;category&quot;:&quot;default&quot;,&quot;installments&quot;:12,&quot;freight_value&quot;:&quot;0.00&quot;,&quot;express_freight_value&quot;:&quot;0.00&quot;,&quot;seller_cep&quot;:null,&quot;height&quot;:&quot;0.00&quot;,&quot;length&quot;:&quot;0.00&quot;,&quot;weight&quot;:&quot;0.00&quot;,&quot;width&quot;:&quot;0.00&quot;,&quot;order_bump_text&quot;:&quot;&quot;,&quot;order_bump_freight&quot;:&quot;0.00&quot;,&quot;order_bump&quot;:0,&quot;show_bump_image&quot;:0,&quot;created_at&quot;:&quot;2021-11-04 19:19:17&quot;,&quot;updated_at&quot;:&quot;2022-12-22 11:50:45&quot;,&quot;retry_discount_1&quot;:&quot;0.00&quot;,&quot;retry_discount_2&quot;:&quot;0.00&quot;,&quot;installments_default&quot;:12,&quot;freight_description&quot;:&quot;&quot;,&quot;show_total_value&quot;:0,&quot;chronometer_time&quot;:&quot;15:00&quot;,&quot;max_installments_billet&quot;:3,&quot;display_callcenter&quot;:1,&quot;use_coupon&quot;:0,&quot;coupon_id&quot;:5125,&quot;minimum_sale_value&quot;:&quot;165.36&quot;,&quot;free_freight&quot;:1,&quot;show_freight_value_on_installment&quot;:1,&quot;show_full_address&quot;:1,&quot;hidden_freight_value&quot;:0,&quot;charge_type&quot;:&quot;default&quot;,&quot;custom_register_title&quot;:&quot;&quot;,&quot;custom_payment_title&quot;:&quot;&quot;,&quot;user_id&quot;:3086,&quot;show_on_shop_window&quot;:1,&quot;show_coupon_input_on_checkout&quot;:0,&quot;origin_id&quot;:4,&quot;is_active&quot;:true,&quot;enable_international&quot;:0,&quot;price&quot;:187.90000000000001,&quot;old_price&quot;:147,&quot;product_qty&quot;:1,&quot;has_physical_products&quot;:true,&quot;subscription_plan&quot;:{&quot;id&quot;:36726,&quot;bundle_id&quot;:1325195,&quot;interval_type&quot;:1,&quot;interval_count&quot;:0,&quot;charge_day&quot;:0,&quot;created_at&quot;:&quot;2021-11-04 19:19:17&quot;,&quot;updated_at&quot;:&quot;2022-12-22 11:50:45&quot;,&quot;deleted_at&quot;:null},&quot;subscription_free_membership&quot;:null,&quot;sites&quot;:[{&quot;id&quot;:12041,&quot;delivery_tracking_configuration_id&quot;:0,&quot;name&quot;:&quot;Curcumini&quot;,&quot;domain&quot;:&quot;curcumini.carrinho.app&quot;,&quot;domain_new_checkout&quot;:&quot;curcumini.finaliza.shop&quot;,&quot;remarketing_domain&quot;:&quot;&quot;,&quot;color&quot;:&quot;red&quot;,&quot;theme&quot;:&quot;theme-default-blue&quot;,&quot;template&quot;:&quot;ocmtb&quot;,&quot;view_folder&quot;:&quot;localhost&quot;,&quot;payment_setting_id&quot;:11769,&quot;pixels_id&quot;:0,&quot;company_id&quot;:1236,&quot;enable_new_checkout&quot;:0,&quot;enable_products_catalog&quot;:0,&quot;email_campaign_setting_id&quot;:0,&quot;created_at&quot;:&quot;2021-11-04 19:19:15&quot;,&quot;updated_at&quot;:&quot;2023-10-04 16:40:21&quot;,&quot;erp_setting_id&quot;:0,&quot;erp_setting_without_callcenter_id&quot;:0,&quot;path_version&quot;:&quot;&quot;,&quot;bundle_group_id&quot;:10903,&quot;gtm_code&quot;:&quot;&quot;,&quot;auto_refund&quot;:0,&quot;show_cronometer&quot;:1,&quot;show_in_stock_message&quot;:0,&quot;domain_must_redirect_to_rt&quot;:0,&quot;payment_setting_callcenter_id&quot;:11769,&quot;bundles_order&quot;:&quot;desc&quot;,&quot;cta_color&quot;:&quot;&quot;,&quot;payment_custom_message&quot;:&quot;&quot;,&quot;best_seller_position&quot;:0,&quot;use_custom_checkout&quot;:1,&quot;custom_checkout_minimal&quot;:1,&quot;custom_success_url&quot;:&quot;curcumini.com.br\/obrigado-cartao&quot;,&quot;custom_additional_url&quot;:&quot;&quot;,&quot;email_is_required&quot;:1,&quot;custom_billet_url&quot;:&quot;curcumini.com.br\/obrigado-boleto&quot;,&quot;default_freight_type&quot;:&quot;PAC&quot;,&quot;list_all_bundles&quot;:1,&quot;partner_rates_setting_id&quot;:104,&quot;cash_out_settings_id&quot;:1,&quot;use_send_mail&quot;:1,&quot;producer_id&quot;:2946,&quot;producer_squad_id&quot;:12,&quot;email_name&quot;:&quot;Curcumini&quot;,&quot;email_description&quot;:&quot;&quot;,&quot;email_template&quot;:&quot;default&quot;,&quot;email_validation_checkout&quot;:0,&quot;email_logo_top&quot;:null,&quot;email_confirmation&quot;:0,&quot;evolux_interested_description&quot;:&quot;&lt;p&gt;&nbsp;&lt;\/p&gt;&quot;,&quot;evolux_upsell_description&quot;:&quot;&lt;p&gt;&nbsp;&lt;\/p&gt;&quot;,&quot;evolux_canceled_description&quot;:&quot;&lt;p&gt;&nbsp;&lt;\/p&gt;&quot;,&quot;use_iframe_success_page&quot;:1,&quot;use_coupon&quot;:1,&quot;bin_validation&quot;:0,&quot;click_config&quot;:&quot;last_click_without_replacement&quot;,&quot;tracking_lifetime&quot;:2250,&quot;producer_traffic_replaces_affiliate&quot;:0,&quot;show_installments_one_click&quot;:0,&quot;skip_upsell_one_click_confirmation&quot;:0,&quot;show_whats_field&quot;:0,&quot;deleted_at&quot;:null,&quot;site_free_pack&quot;:0,&quot;logistic_setting_id&quot;:0,&quot;callcenter_info_success_page&quot;:1,&quot;show_callcenter&quot;:1,&quot;support_email&quot;:&quot;sac@curcumini.com.br&quot;,&quot;support_phone&quot;:&quot;(27) 99857-8466&quot;,&quot;use_manual_attendances&quot;:0,&quot;sms_funnel_automatic_discount&quot;:&quot;0.00&quot;,&quot;maximum_discount&quot;:&quot;10.00&quot;,&quot;maximum_discount_api&quot;:&quot;0.00&quot;,&quot;block_order_when_upsell&quot;:1,&quot;boleto_notification_overdue&quot;:0,&quot;boleto_notification_overdue_minimal_minutes_send&quot;:1,&quot;email_recover_canceled_creditcard&quot;:1,&quot;email_recover_canceled_creditcard_delay&quot;:10,&quot;email_recover_abandoned_cart&quot;:1,&quot;email_recover_abandoned_cart_first_delay&quot;:60,&quot;email_recover_abandoned_cart_last_delay&quot;:24,&quot;api_without_cvv_document_number&quot;:0,&quot;use_appmax_support_info&quot;:1,&quot;display_kits_callcenter&quot;:1,&quot;send_email_tracking_code&quot;:1,&quot;callcenter_kit_products_limit&quot;:0,&quot;block_sales_processing&quot;:0,&quot;block_sales_processing_at&quot;:null,&quot;block_sales_processing_user_id&quot;:null,&quot;risk_level&quot;:1,&quot;sale_recovery&quot;:0}],&quot;freight_settings&quot;:[{&quot;id&quot;:272,&quot;company_id&quot;:1236,&quot;created_by&quot;:2946,&quot;updated_by&quot;:2946,&quot;name&quot;:&quot;Correios - 7 a 12 dias \u00fateis&quot;,&quot;description&quot;:&quot;Frete Kit&quot;,&quot;value&quot;:&quot;29.90&quot;,&quot;delivery_days&quot;:null,&quot;display_all&quot;:1,&quot;show_callcenter&quot;:0,&quot;created_at&quot;:&quot;2020-09-01 20:53:25&quot;,&quot;updated_at&quot;:&quot;2021-11-04 19:14:51&quot;,&quot;deleted_at&quot;:null,&quot;pivot&quot;:{&quot;bundle_id&quot;:1325195,&quot;freight_setting_id&quot;:272,&quot;created_at&quot;:&quot;2021-11-04 19:19:59&quot;,&quot;updated_at&quot;:&quot;2021-11-04 19:19:59&quot;}}],&quot;products&quot;:[{&quot;id&quot;:1092382,&quot;sku&quot;:&quot;&quot;,&quot;label&quot;:null,&quot;price&quot;:&quot;147.00&quot;,&quot;name&quot;:&quot;Curcumini&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:null,&quot;inventory&quot;:1,&quot;cost&quot;:&quot;0.00&quot;,&quot;is_app&quot;:0,&quot;is_info&quot;:0,&quot;is_active&quot;:true,&quot;ipi&quot;:&quot;0&quot;,&quot;height&quot;:&quot;10.00&quot;,&quot;length&quot;:&quot;10.00&quot;,&quot;weight&quot;:&quot;0.10&quot;,&quot;width&quot;:&quot;10.00&quot;,&quot;company_id&quot;:1236,&quot;external_id&quot;:null,&quot;external_variant_id&quot;:null,&quot;estimated_refunded&quot;:&quot;0.00&quot;,&quot;information&quot;:null,&quot;user_id&quot;:null,&quot;created_at&quot;:&quot;2021-11-04 19:19:17&quot;,&quot;updated_at&quot;:&quot;2023-03-23 16:44:06&quot;,&quot;origin_id&quot;:4,&quot;pivot&quot;:{&quot;bundle_id&quot;:1325195,&quot;product_id&quot;:1092382,&quot;product_qty&quot;:1,&quot;product_price&quot;:&quot;187.90&quot;}}],&quot;subscription_membership_fee&quot;:null}" 
+            :order-bumps="[]" 
+            subscription="subscription" 
+            :freight-options="[{&quot;id&quot;:272,&quot;name&quot;:&quot;Correios - 7 a 12 dias \u00fateis&quot;,&quot;value&quot;:&quot;29.90&quot;,&quot;description&quot;:&quot;Frete Kit&quot;,&quot;totalPrice&quot;:217.80000000000001,&quot;displayAll&quot;:1}]" 
+            btn-variant=success 
+            btn-stylized=' ' 
+            :show-coupon='false'
+            coupon-discount=''
+        >
+        </pix-form>
+    </div>
+  
+</div>
+                </div>
+            
+        </div>
+    </div><!-- /card-body -->
+    <div class="col-12">
+        <div class="alert alert-danger d-none" role="alert" id="error-buy">
+</div>
+
+    </div>
+    <div class="card-footer bg-transparent">
+        <img width="180" src="https://curcumini.carrinho.app/checkout-public/one-checkout/monetizze/images/secure_verde.svg"
+             class="img-fluid d-block mx-auto">
+    </div><!-- /card-footer -->
+</div><!-- /card -->
+    <h6 class="text-black-50 mt-2"><small>Taxa de 2,99% a.m.</small></h6>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="coupon-id" value="">
+
+<input type="hidden" id="coupon-id" value="">
+
+<div class="container-fluid">
+    <div class="footer row no-gutters">
+                    <div class="col-12 text-center">
+                Esta compra será processada pela Appmax
+            </div>
+            </div>
+</div>
+    
+    <script src="https://curcumini.carrinho.app/checkout-public/one-checkout/common/js/vendor.min.js?v=7.0.191"></script>
+    <script src="https://curcumini.carrinho.app/checkout-public/tracking/tracking.min.js?v=7.0.191"></script>
+    <script src="https://curcumini.carrinho.app/assets/js/checkout.min.js?v=7.0.191"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/appmax_finger_security@1.23.0"></script>
+    <script src="https://curcumini.carrinho.app/checkout-public/one-checkout/common/js/functions.min.js?v=7.0.191"></script>
+    <script src="https://curcumini.carrinho.app/checkout-public/one-checkout/monetizze/js/scripts.min.js?v=7.0.191"></script>
+    <script src="https://curcumini.carrinho.app/checkout-public/one-checkout/monetizze/js/discount.coupon.min.js?v=7.0.191"></script>
+    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=pt-br"></script>
+
+        <input type="hidden" id="bundle-price" value="187.9">
+
+    
+    <script type="text/javascript">
+        $.ajaxSetup({
+            beforeSend: function(xhr) {
+                if (! this.crossDomain) {
+                    xhr.setRequestHeader("X-CSRF-TOKEN", $('meta[name="csrf-token"]').attr('content'));
+                }
+            }
+        });
+
+        $(document).ajaxError(function(event, jqxhr) {
+            if (jqxhr.status === 403) {
+                $('meta[name="csrf-token"]').attr('content', jqxhr.responseJSON.csrf)
+
+                $('input[name="_token"]').val(jqxhr.responseJSON.csrf)
+            }
+        });
+
+        $(document).ready(function() {
+            $.ajax({
+                type: "POST",
+                url: '/check-session',
+                data: {
+                    '_token': $('meta[name="csrf-token"]').attr('content')
+                },
+                dataType: "json"
+            })
+        });
+    </script>
+
+    
+    <input type="hidden" name="facebook-pixel-partner-data" value="{&quot;610178706830386&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:null},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]},&quot;695538965223119&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:null},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]},&quot;671290650813997&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:null},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]},&quot;507004364254419&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:null},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]},&quot;306426908298102&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:null},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]},&quot;677845600122399&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:null},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]},&quot;2205071159668331&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:null},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]},&quot;885242415778712&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:null},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]},&quot;382275643760403&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:null},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]}}">
+
+<!-- Facebook Pixel Code -->
+<script src="https://curcumini.carrinho.app/assets/sites/pixels/facebook.min.js"></script>
+<!-- End Facebook Pixel Code -->
+<input type="hidden" name="analytics-pixel-partner-data" value="{&quot;734619951&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:null},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]},&quot;G-E302PRVK34&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:null},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]}}">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=734619951"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E302PRVK34"></script>
+
+<!-- Analytics Pixel Code -->
+<script src="https://curcumini.carrinho.app/assets/sites/pixels/analytics.min.js"></script>
+<!--Analytics Pixel Code -->
+<!-- Start of Outbrain Pixel Code -->
+
+<input type="hidden" name="outbrain-pixel-partner-data" value="{&quot;002be22a571593065464e63e3df180e140&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:null},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{&quot;event_name&quot;:&quot;Checkout&quot;}}]}}">
+
+<!-- Outbrain Pixel Code -->
+<script src="https://curcumini.carrinho.app/assets/sites/pixels/outbrain.min.js"></script>
+<!--Outbrain Pixel Code -->
+
+<!-- End of Outbrain Pixel Code -->
+<input type="hidden" name="googleads-pixel-partner-data" value="{&quot;AW- 774641875&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:&quot;Lpo3CI_9yacDENOxsPEC&quot;},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]},&quot;AW-10874253880&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:&quot;7tO5CJTn2d8DELjkn8Eo&quot;},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}},{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]},&quot;AW-10879749226&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:&quot;s0ttCKDkr7ADEOqY78Mo&quot;},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]},&quot;AW-766947982&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:&quot;htBGCPnWlbADEI7l2u0C&quot;},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]},&quot;AW-10873688031&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:&quot;DKQ_CK732bADEN-f_cAo&quot;},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]},&quot;AW-10880748571&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:&quot;_p0LCOenh7EDEJuYrMQo&quot;},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]},&quot;AW-795092986&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:&quot;IQDdCIKCi7EDEPrPkPsC&quot;},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]},&quot;AW-10880187908&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:&quot;K-OeCIXizrEDEIT8icQo&quot;},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]},&quot;AW-10884065626&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:&quot;FNjECO3YjbMDENrS9sUo&quot;},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]},&quot;AW-10885303336&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:&quot;T3hpCOfQobMDEKiYwsYo&quot;},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]},&quot;AW- 774623613&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:&quot;O5VTCL3ky9oDEP2ir_EC&quot;},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]},&quot;AW-859941480\t&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:&quot;h3pBCIHB0dsDEOjUhpoD&quot;},&quot;events&quot;:[{&quot;type&quot;:&quot;checkout&quot;,&quot;params&quot;:{}}]}}">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW- 774641875"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10874253880"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10879749226"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-766947982"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10873688031"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10880748571"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-795092986"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10880187908"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10884065626"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10885303336"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW- 774623613"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-859941480	"></script>
+
+<!-- Google Ads Pixel Code -->
+<script src="https://curcumini.carrinho.app/assets/sites/pixels/googleads.min.js"></script>
+<!--Google Ads Pixel Code -->
+<input type="hidden" name="tagmanager-pixel-partner-data" value="{&quot;GTM-5DX3GS2&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:null},&quot;events&quot;:[{&quot;type&quot;:&quot;allPages&quot;,&quot;params&quot;:{}}]},&quot;GTM-K7PXD3W&quot;:{&quot;data&quot;:{&quot;conversion_label&quot;:null},&quot;events&quot;:[{&quot;type&quot;:&quot;allPages&quot;,&quot;params&quot;:{}}]}}">
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DX3GS2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7PXD3W"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Tag Manager Pixel Code -->
+<script src="https://curcumini.carrinho.app/assets/sites/pixels/tagmanager.min.js"></script>
+<!--Tag Manager Pixel Code -->
+
+    <iframe src='https://curcumini.carrinho.app/pixel/page_checkout' style='width: 1px;height: 1px;' frameborder='0'></iframe>
+    <script type="text/javascript"> 
+                          var back_redirect_back_link = 'https://curcumini.com.br/back';
+
+                          history.pushState({},"",location.href); 
+                      history.pushState({},"",location.href); 
+
+                      window.onpopstate = function(){ 
+                          setTimeout(function () { 
+                                  location.href = back_redirect_back_link+location.search; 
+                          },1); 
+                      }; 
+  </script>
+<script>!function(t){var e={};function n(r){if(e[r])return e[r].exports;var i=e[r]={i:r,l:!1,exports:{}};return t[r].call(i.exports,i,i.exports,n),i.l=!0,i.exports}n.m=t,n.c=e,n.d=function(t,e,r){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:r})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"_esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.esModule)return t;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var i in t)n.d(r,i,function(e){return t[e]}.bind(null,i));return r},n.n=function(t){var e=t&&t.esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="",n(n.s=3)}([function(t,e,n){"use strict";(function(e){function n(t){var e,n,i,o,s,a,c=Object.create(null);if(this[u]=c,t)if("string"==typeof t)for("?"===t.charAt(0)&&(t=t.slice(1)),s=0,a=(o=t.split("&")).length;s<a;s++)-1<(e=(i=o[s]).indexOf("="))?l(c,h(i.slice(0,e)),h(i.slice(e+1))):i.length&&l(c,h(i),"");else if(r(t))for(s=0,a=t.length;s<a;s++)l(c,(i=t[s])[0],i[1]);else for(n in t)l(c,n,t[n])}var r=Array.isArray,i=n.prototype,o=/[!'\(\)]|%20|%00/g,s=/\+/g,a={"!":"%21","'":"%27","(":"%28",")":"%29","":"%7E","%20":"+","%00":"\0"},c=function(t){return a[t]},u="URLSearchParams_:"+Math.random();function l(t,e,n){e in t?t[e].push(""+n):t[e]=r(n)?n:[""+n]}function h(t){return decodeURIComponent(t.replace(s," "))}function f(t){return encodeURIComponent(t).replace(o,c)}i.append=function(t,e){l(this[u],t,e)},i.delete=function(t){delete this[u][t]},i.get=function(t){var e=this[u];return t in e?e[t][0]:null},i.getAll=function(t){var e=this[u];return t in e?e[t].slice(0):[]},i.has=function(t){return t in this[u]},i.set=function(t,e){this[u][t]=[""+e]},i.forEach=function(t,e){var n=this[u];Object.getOwnPropertyNames(n).forEach(function(r){n[r].forEach(function(n){t.call(e,n,r,this)},this)},this)},i.toJSON=function(){return{}},i.toString=function(){var t,e,n,r,i=this[u],o=[];for(e in i)for(n=f(e),t=0,r=i[e];t<r.length;t++)o.push(n+"="+f(r[t]));return o.join("&")},function(t){var e=function(){try{return!!Symbol.iterator}catch(t){return!1}}();"forEach"in t||(t.forEach=function(t,e){var n=Object.create(null);this.toString().replace(/=[\s\S]*?(?:&|$)/g,"=").split("=").forEach(function(r){!r.length||r in n||(n[r]=this.getAll(r)).forEach(function(n){t.call(e,n,r,this)},this)},this)}),"keys"in t||(t.keys=function(){var t=[];this.forEach(function(e,n){t.push(n)});var n={next:function(){var e=t.shift();return{done:void 0===e,value:e}}};return e&&(n[Symbol.iterator]=function(){return n}),n}),"values"in t||(t.values=function(){var t=[];this.forEach(function(e){t.push(e)});var n={next:function(){var e=t.shift();return{done:void 0===e,value:e}}};return e&&(n[Symbol.iterator]=function(){return n}),n}),"entries"in t||(t.entries=function(){var t=[];this.forEach(function(e,n){t.push([n,e])});var n={next:function(){var e=t.shift();return{done:void 0===e,value:e}}};return e&&(n[Symbol.iterator]=function(){return n}),n}),!e||Symbol.iterator in t||(t[Symbol.iterator]=t.entries),"sort"in t||(t.sort=function(){for(var t,e,n,r=this.entries(),i=r.next(),o=i.done,s=[],a=Object.create(null);!o;)e=(n=i.value)[0],s.push(e),e in a||(a[e]=[]),a[e].push(n[1]),o=(i=r.next()).done;for(s.sort(),t=0;t<s.length;t++)this.delete(s[t]);for(t=0;t<s.length;t++)e=s[t],this.append(e,a[e].shift())})}((n=t.exports=e.URLSearchParams||n).prototype)}).call(this,n(1))},function(t,e){var n;n=function(){return this}();try{n=n||Function("return this")()||(0,eval)("this")}catch(t){"object"==typeof window&&(n=window)}t.exports=n},function(t,e){Element.prototype.matches||(Element.prototype.matches=Element.prototype.msMatchesSelector||Element.prototype.webkitMatchesSelector),Element.prototype.closest||(Element.prototype.closest=function(t){var e=this;do{if(e.matches(t))return e;e=e.parentElement||e.parentNode}while(null!==e&&1===e.nodeType);return null})},function(t,e,n){"use strict";n.r(e);var r=n(0),i=n.n(r);const o="URLSearchParams"in window?window.URLSearchParams:i.a,s=(t,e,n)=>{if(e.addEventListener)e.addEventListener(t,n,!1);else{if(e.attachEvent)return e.attachEvent("on"+t,n);e["on"+t]=n}};n(2);const a=/^(((http|https|ftp):\/\/)|\/)/;e.default=new class{constructor(t){this.events={},this.interceptor=t,"complete"===document.readyState?this.windowLoad():s("load",window,this.windowLoad.bind(this))}on(t,e){this.events[t]=this.events[t]||[],this.events[t].push(e)}getHtmlLinks(){this.links=document.getElementsByTagName("a"),this.trigger("getLinks",this.links)}trigger(t,...e){(this.events[t]||[]).forEach(t=>{t.apply(this,e)})}setHtmlLinks(){for(const t of this.links)this.updateSearchOfElement(t);this.trigger("setLinks",this.links)}updateSearchOfElement(t){if(t.hasAttribute("href")&&t.getAttribute("href").match(a)){let e=new o(t.search);this.params.forEach((t,n)=>{e.set(n,""!=e.getAll(n)?e.getAll(n):this.params.getAll(n))});let n=e.toString();n.length>3&&(t.search=n),t.href=t.href.replace(/\?$/,"")}}interceptAllLinks(){s("click",window,t=>{const e=t.target.closest("a");e&&this.updateSearchOfElement(e)})}parseURL(){this.params=new o(location.search)}windowLoad(){this.parseURL(),this.getHtmlLinks(),this.setHtmlLinks(),this.interceptor&&this.interceptAllLinks()}}(!0)}]);</script>
+
+    
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-fa9b211374ada0557cd","applicationID":"982074503","transactionName":"ZldWMkBYVhACBURfX18ddQVGUFcNTAVYU1NaXUESHFZWBg==","queueTime":0,"applicationTime":507,"atts":"ShBVRAhCRR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
